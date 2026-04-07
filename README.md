@@ -1,0 +1,1 @@
+# earnmore-rewards-config
