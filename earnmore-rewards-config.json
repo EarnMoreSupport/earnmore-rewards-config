@@ -77,6 +77,7 @@
 
     "Bank of America Customized Cash Rewards": {
       "Choice Category": 3,
+      "Home Improvement": 3,
       "Groceries": 2,
       "Wholesale Clubs": 2,
       "Other": 1
@@ -182,11 +183,30 @@
     },
 
     "Chase Freedom Flex": {
-      "Chase Travel": 5,
-      "Dining": 3,
-      "Drugstores": 3,
-      "Rotating": 5,
-      "Other": 1
+      "categories": {
+        "Chase Travel": 5,
+        "Dining": 3,
+        "Drugstores": 3,
+        "Other": 1
+      },
+      "rotating": [
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Amazon", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Chase Travel", "rate": 9 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Feeding America", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 }
+      ]
     },
 
     "Chase Sapphire Preferred": {
@@ -324,8 +344,27 @@
     },
 
     "Discover It Cash Back": {
-      "Rotating": 5,
-      "Other": 1
+      "categories": {
+        "Other": 1
+      },
+      "rotating": [
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Dining", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Home Improvement", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 }
+      ]
     },
 
     "Discover it Chrome": {
@@ -339,8 +378,27 @@
     },
 
     "Discover it Student Cash Back": {
-      "Rotating": 5,
-      "Other": 1
+      "categories": {
+        "Other": 1
+      },
+      "rotating": [
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-01-01", "end": "2026-03-31", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Dining", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "Home Improvement", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 },
+        { "start": "2026-10-01", "end": "2026-12-31", "category": "", "rate": 5 }
+      ]
     },
 
     "Discover it Secured": {
@@ -782,6 +840,23 @@
     "advertising.amazon.com": "Advertising",
     "bing.com/ads": "Advertising",
 
+    "homedepot.com": "Home Improvement",
+    "lowes.com": "Home Improvement",
+    "menards.com": "Home Improvement",
+    "acehardware.com": "Home Improvement",
+    "truevalue.com": "Home Improvement",
+    "doitbest.com": "Home Improvement",
+    "harborfreight.com": "Home Improvement",
+    "toolstation.com": "Home Improvement",
+    "benjaminmoore.com": "Home Improvement",
+    "sherwin-williams.com": "Home Improvement",
+    "floordecor.com": "Home Improvement",
+    "flooranddecor.com": "Home Improvement",
+    "build.com": "Home Improvement",
+    "fergusonshowrooms.com": "Home Improvement",
+    "grainger.com": "Home Improvement",
+    "farmerscoopdelivery.com": "Home Improvement",
+
     "walmart.com": "Other",
     "target.com": "Other",
     "bestbuy.com": "Other",
@@ -789,8 +864,6 @@
     "etsy.com": "Other",
     "wayfair.com": "Other",
     "chewy.com": "Other",
-    "homedepot.com": "Other",
-    "lowes.com": "Other",
     "kohls.com": "Other",
     "macys.com": "Other",
     "nordstrom.com": "Other",
