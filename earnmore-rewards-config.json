@@ -70,7 +70,6 @@
     },
 
     "American Express Business Platinum": {
-      "Flights": 5,
       "Amex Travel": 5,
       "Other": 1
     },
@@ -88,7 +87,7 @@
     },
 
     "Bank of America Travel Rewards": {
-      "Travel": 3,
+      "BofA Travel": 3,
       "Other": 1.5
     },
 
@@ -115,7 +114,7 @@
     },
 
     "Bank of America Business Advantage Travel Rewards": {
-      "Travel": 3,
+      "BofA Travel": 3,
       "Other": 1.5
     },
 
