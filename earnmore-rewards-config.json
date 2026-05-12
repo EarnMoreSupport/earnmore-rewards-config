@@ -159,7 +159,7 @@
 
     "Capital One Venture X": {
       "Capital One Travel": 10,
-      "Capital One Travel 5x": 5,
+      "Capital One Travel Select": 5,
       "Other": 2
     },
 
@@ -175,7 +175,7 @@
 
     "Capital One Venture X Business": {
       "Capital One Travel": 10,
-      "Capital One Travel 5x": 5,
+      "Capital One Travel Select": 5,
       "Other": 2
     },
 
@@ -535,9 +535,9 @@
     "chasetravel.com": "Chase Travel",
     "amextravel.com": "Amex Travel",
     "travel.capitalone.com": "Capital One Travel",
-    "travel.capitalone.com/flights": "Capital One Travel 5x",
-    "travel.capitalone.com/activities": "Capital One Travel 5x",
-    "travel.capitalone.com/packages": "Capital One Travel 5x",
+    "travel.capitalone.com/flights": "Capital One Travel Select",
+    "travel.capitalone.com/activities": "Capital One Travel Select",
+    "travel.capitalone.com/packages": "Capital One Travel Select",
     "entertainment.capitalone.com": "Capital One Entertainment",
     "cititravel.com": "Citi Travel",
 
