@@ -57,7 +57,17 @@
       "Streaming": 6,
       "Gas": 3,
       "Transit": 3,
-      "Other": 1
+      "Other": 1,
+      "streamingDomains": [
+        "netflix.com", "hulu.com", "disneyplus.com", "spotify.com",
+        "max.com", "hbomax.com", "peacocktv.com", "paramountplus.com",
+        "tv.apple.com", "music.apple.com", "primevideo.com",
+        "starz.com", "amcplus.com", "mgmplus.com", "britbox.com", "discoveryplus.com", "directvstream.com",
+        "fubo.tv", "fubotv.com", "slingtv.com", "pandora.com",
+        "tidal.com", "iheartradio.com", "audible.com", "siriusxm.com",
+        "youtube.com", "espn.com",
+        "luminarypodcasts.com", "nba.com"
+      ]
     },
 
     "American Express Blue Business Plus": {
@@ -149,7 +159,7 @@
 
     "Capital One Venture X": {
       "Capital One Travel": 10,
-      "Flights": 5,
+      "Capital One Travel 5x": 5,
       "Other": 2
     },
 
@@ -165,7 +175,7 @@
 
     "Capital One Venture X Business": {
       "Capital One Travel": 10,
-      "Flights": 5,
+      "Capital One Travel 5x": 5,
       "Other": 2
     },
 
@@ -213,7 +223,14 @@
       "Online Groceries": 3,
       "Streaming": 3,
       "Travel": 2,
-      "Other": 1
+      "Other": 1,
+      "streamingDomains": [
+        "netflix.com", "hulu.com", "disneyplus.com", "spotify.com",
+        "max.com", "hbomax.com", "peacocktv.com", "paramountplus.com",
+        "tv.apple.com", "music.apple.com", "pandora.com", "showtime.com",
+        "siriusxm.com", "slingtv.com", "fubotv.com", "fubo.tv",
+        "youtube.com", "athome.fandango.com", "espn.com"
+      ]
     },
 
     "Chase Sapphire Reserve": {
@@ -287,7 +304,7 @@
 
     "Citi Strata Elite": {
       "Citi Travel": 12,
-      "Flights": 6,
+      "Citi Travel Flights": 6,
       "Dining Weekend": 6,
       "Dining": 3,
       "Other": 1.5
@@ -417,7 +434,17 @@
       "Dining": 2,
       "Streaming": 2,
       "Groceries": 2,
-      "Other": 1
+      "Other": 1,
+      "streamingDomains": [
+        "netflix.com", "hulu.com", "disneyplus.com", "spotify.com",
+        "max.com", "hbomax.com", "peacocktv.com", "paramountplus.com",
+        "tv.apple.com", "music.apple.com", "primevideo.com", "showtime.com",
+        "starz.com", "amcplus.com", "discoveryplus.com", "directvstream.com",
+        "fubo.tv", "fubotv.com", "slingtv.com", "pandora.com",
+        "tidal.com", "iheartradio.com", "audible.com", "siriusxm.com",
+        "youtube.com", "athome.fandango.com", "espn.com",
+        "fanduelsportsnetwork.com", "liveone.com", "luminarypodcasts.com", "nba.com"
+      ]
     },
 
     "U.S. Bank Altitude Go": {
@@ -425,7 +452,17 @@
       "Groceries": 2,
       "Gas": 2,
       "Streaming": 2,
-      "Other": 1
+      "Other": 1,
+      "streamingDomains": [
+        "netflix.com", "hulu.com", "disneyplus.com", "spotify.com",
+        "max.com", "hbomax.com", "peacocktv.com", "paramountplus.com",
+        "tv.apple.com", "music.apple.com", "primevideo.com", "showtime.com",
+        "starz.com", "amcplus.com", "discoveryplus.com", "directvstream.com",
+        "fubo.tv", "fubotv.com", "slingtv.com", "pandora.com",
+        "tidal.com", "iheartradio.com", "audible.com", "siriusxm.com",
+        "youtube.com", "athome.fandango.com", "espn.com",
+        "fanduelsportsnetwork.com", "liveone.com", "luminarypodcasts.com", "nba.com"
+      ]
     },
 
     "U.S. Bank Cash+": {
@@ -498,6 +535,9 @@
     "chasetravel.com": "Chase Travel",
     "amextravel.com": "Amex Travel",
     "travel.capitalone.com": "Capital One Travel",
+    "travel.capitalone.com/flights": "Capital One Travel 5x",
+    "travel.capitalone.com/activities": "Capital One Travel 5x",
+    "travel.capitalone.com/packages": "Capital One Travel 5x",
     "entertainment.capitalone.com": "Capital One Entertainment",
     "cititravel.com": "Citi Travel",
 
@@ -753,9 +793,11 @@
     "peacocktv.com": "Streaming",
     "paramountplus.com": "Streaming",
     "tv.apple.com": "Streaming",
+    "music.apple.com": "Streaming",
     "primevideo.com": "Streaming",
+    "amcplus.com": "Streaming",
+    "mgmplus.com": "Streaming",
     "crunchyroll.com": "Streaming",
-    "funimation.com": "Streaming",
     "showtime.com": "Streaming",
     "starz.com": "Streaming",
     "shudder.com": "Streaming",
@@ -765,8 +807,13 @@
     "philo.com": "Streaming",
     "fubo.tv": "Streaming",
     "fubotv.com": "Streaming",
+    "siriusxm.com": "Streaming",
     "slingtv.com": "Streaming",
     "directvstream.com": "Streaming",
+    "youtube.com": "Streaming",
+    "athome.fandango.com": "Streaming",
+    "espn.com": "Streaming",
+    "plus.espn.com": "Streaming",
     "pandora.com": "Streaming",
     "tidal.com": "Streaming",
     "deezer.com": "Streaming",
@@ -775,6 +822,10 @@
     "tubitv.com": "Streaming",
     "pluto.tv": "Streaming",
     "plutotv.com": "Streaming",
+    "fanduelsportsnetwork.com": "Streaming",
+    "liveone.com": "Streaming",
+    "luminarypodcasts.com": "Streaming",
+    "nba.com": "Streaming",
 
     "amazon.com": "Amazon",
     "amazon.co.uk": "Amazon",
