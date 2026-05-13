@@ -51,15 +51,15 @@
 
     "American Express Blue Cash Everyday": {
       "Groceries": 3,
-      "Online Shopping": 3,
+      "Online Retail": 3,
       "Gas": 3,
       "Other": 1,
       "spendCaps": {
         "capPeriod": "annual",
         "tiers": [
-          { "key": "groceries", "fallbackRate": 1, "cap": 6000, "uiLabel": "3% groceries", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] },
-          { "key": "gas",       "fallbackRate": 1, "cap": 6000, "uiLabel": "3% gas",       "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Gas"] },
-          { "key": "online",    "fallbackRate": 1, "cap": 6000, "uiLabel": "3% online",    "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Other", "Home Improvement"] }
+          { "key": "groceries",     "fallbackRate": 1, "cap": 6000, "uiLabel": "3% groceries",     "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] },
+          { "key": "gas",           "fallbackRate": 1, "cap": 6000, "uiLabel": "3% gas",           "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Gas"] },
+          { "key": "online retail", "fallbackRate": 1, "cap": 6000, "uiLabel": "3% online retail", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Online Retail"] }
         ]
       }
     },
@@ -96,7 +96,8 @@
 
     "American Express Business Gold": {
       "Top Category": 4,
-      "Other": 1
+      "Other": 1,
+      "trackingNote": "Spend cap tracking isn't available — this card's bonus categories are determined automatically by Amex based on your highest monthly spending."
     },
 
     "American Express Business Platinum": {
@@ -115,12 +116,12 @@
           "key": "choice", "rateKey": "Choice Category", "slots": 1, "uiLabel": "3% category",
           "cap": 2500, "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
           "choices": [
-            { "label": "Gas",              "categories": ["Gas"] },
-            { "label": "Online Shopping",  "categories": ["Other", "Clothing", "Department Stores", "Electronics", "Beauty", "Furniture", "Pet Supplies", "Sporting Goods", "Office Supplies"] },
-            { "label": "Dining",           "categories": ["Dining"] },
-            { "label": "Travel",           "categories": ["Travel", "Hotels", "Flights", "Car Rentals"] },
-            { "label": "Drug Stores",      "categories": ["Drugstores"] },
-            { "label": "Home Improvement", "categories": ["Home Improvement"] }
+            { "label": "Gas & EV Charging", "categories": ["Gas", "EV Charging"] },
+            { "label": "Online Shopping",   "categories": ["Other", "Amazon", "Clothing", "Department Stores", "Electronics", "Beauty", "Furniture", "Pet Supplies", "Sporting Goods", "Office Supplies", "Streaming", "Internet", "Phone"] },
+            { "label": "Dining",            "categories": ["Dining"] },
+            { "label": "Travel",            "categories": ["Travel", "Hotels", "Flights", "Car Rentals", "Transit"] },
+            { "label": "Drug Stores",       "categories": ["Drugstores"] },
+            { "label": "Home Improvement",  "categories": ["Home Improvement", "Furniture"] }
           ]
         }]
       }
@@ -343,10 +344,7 @@
       "Top Category": 5,
       "Citi Travel": 4,
       "Other": 1,
-      "spendCaps": {
-        "capPeriod": "monthly",
-        "tiers": [{ "key": "top", "fallbackRate": 1, "cap": 500, "uiLabel": "5% top category", "capNote": "Citi determines your top category based on all your spending, not just online purchases. Auto-tracking isn't available — check your billing cycle in Citi's portal and enter your spend here.", "categories": ["Top Category"] }]
-      }
+      "trackingNote": "Spend cap tracking isn't available — this card's 5% category is determined automatically by Citi based on your highest monthly spending across all purchases."
     },
 
     "Citi Rewards+": {
@@ -568,7 +566,7 @@
               { "label": "Clothing Stores",          "categories": ["Clothing"] },
               { "label": "Cell Phone Providers",     "categories": ["Phone"] },
               { "label": "Electronic Stores",        "categories": ["Electronics"] },
-              { "label": "Fast Food",                "categories": ["Dining"] },
+              { "label": "Fast Food",                "categories": ["Fast Food"] },
               { "label": "Sporting Goods Stores",    "categories": ["Sporting Goods"] },
               { "label": "Gyms/Fitness Centers",     "categories": ["Fitness"] },
               { "label": "Furniture Stores",         "categories": ["Furniture"] },
@@ -618,7 +616,8 @@
 
     "U.S. Bank Business Altitude Power": {
       "Top Category": 6,
-      "Other": 1.5
+      "Other": 1.5,
+      "trackingNote": "Spend cap tracking isn't available — this card's bonus category is determined automatically by U.S. Bank based on your highest monthly spending."
     },
 
     "Wells Fargo Active Cash": {
