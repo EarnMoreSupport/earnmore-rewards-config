@@ -254,7 +254,7 @@
         { "start": "2026-04-01", "end": "2026-06-30", "category": "Amazon", "rate": 5 },
         { "start": "2026-04-01", "end": "2026-06-30", "category": "Chase Travel", "rate": 9 },
         { "start": "2026-04-01", "end": "2026-06-30", "category": "Feeding America", "rate": 5 },
-        { "start": "2026-04-01", "end": "2026-06-30", "category": "", "rate": 5 },
+        { "start": "2026-04-01", "end": "2026-06-30", "category": "PayPal", "rate": 5 },
         { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
         { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
         { "start": "2026-07-01", "end": "2026-09-30", "category": "", "rate": 5 },
