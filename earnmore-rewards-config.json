@@ -39,7 +39,7 @@
       "Other": 1,
       "spendCaps": {
         "capPeriod": "annual",
-        "tiers": [{ "key": "groceries", "fallbackRate": 1, "cap": 25000, "uiLabel": "4x groceries", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] }]
+        "tiers": [{ "key": "groceries", "fallbackRate": 1, "cap": 25000, "uiLabel": "4x groceries", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] }]
       }
     },
 
@@ -57,9 +57,9 @@
       "spendCaps": {
         "capPeriod": "annual",
         "tiers": [
-          { "key": "groceries",     "fallbackRate": 1, "cap": 6000, "uiLabel": "3% groceries",     "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] },
-          { "key": "gas",           "fallbackRate": 1, "cap": 6000, "uiLabel": "3% gas",           "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Gas"] },
-          { "key": "online retail", "fallbackRate": 1, "cap": 6000, "uiLabel": "3% online retail", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Online Retail"] }
+          { "key": "groceries",     "fallbackRate": 1, "cap": 6000, "uiLabel": "3% groceries",     "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] },
+          { "key": "gas",           "fallbackRate": 1, "cap": 6000, "uiLabel": "3% gas",           "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Gas"] },
+          { "key": "online retail", "fallbackRate": 1, "cap": 6000, "uiLabel": "3% online retail", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Online Retail"] }
         ]
       }
     },
@@ -72,7 +72,7 @@
       "Other": 1,
       "spendCaps": {
         "capPeriod": "annual",
-        "tiers": [{ "key": "groceries", "fallbackRate": 1, "cap": 6000, "uiLabel": "6% groceries", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] }]
+        "tiers": [{ "key": "groceries", "fallbackRate": 1, "cap": 6000, "uiLabel": "6% groceries", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": ["Groceries"] }]
       },
       "streamingDomains": [
         "netflix.com", "hulu.com", "disneyplus.com", "spotify.com",
@@ -90,7 +90,7 @@
       "Other": 2,
       "spendCaps": {
         "capPeriod": "annual",
-        "tiers": [{ "key": "all", "fallbackRate": 1, "cap": 50000, "uiLabel": "2x all purchases", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": null }]
+        "tiers": [{ "key": "all", "fallbackRate": 1, "cap": 50000, "uiLabel": "2x all purchases", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.", "categories": null }]
       }
     },
 
@@ -114,7 +114,7 @@
         "period": "monthly", "capPeriod": "quarterly",
         "tiers": [{
           "key": "choice", "rateKey": "Choice Category", "slots": 1, "uiLabel": "3% category",
-          "cap": 2500, "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+          "cap": 2500, "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
           "choices": [
             { "label": "Gas & EV Charging", "categories": ["Gas", "EV Charging"] },
             { "label": "Online Shopping",   "categories": ["Other", "Amazon", "Clothing", "Department Stores", "Electronics", "Beauty", "Furniture", "Pet Supplies", "Sporting Goods", "Office Supplies", "Streaming", "Internet", "Phone"] },
@@ -156,7 +156,7 @@
         "period": "monthly", "capPeriod": "annual",
         "tiers": [{
           "key": "choice", "rateKey": "Choice Category", "slots": 1, "uiLabel": "3% category",
-          "cap": 50000, "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+          "cap": 50000, "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
           "choices": [
             { "label": "Gas",                     "categories": ["Gas"] },
             { "label": "Dining",                  "categories": ["Dining"] },
@@ -266,7 +266,7 @@
       ],
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Rotating bonus categories change each quarter — auto-tracking isn't available. Check Chase's portal for your actual spend and enter it here.", "categories": ["Rotating"] }]
+        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.", "categories": ["Rotating"] }]
       }
     },
 
@@ -304,8 +304,8 @@
       "spendCaps": {
         "capPeriod": "anniversary",
         "tiers": [
-          { "key": "5pct", "fallbackRate": 1, "cap": 25000, "uiLabel": "5% tier", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.", "categories": ["Internet", "Office Supplies", "Phone"] },
-          { "key": "2pct", "fallbackRate": 1, "cap": 25000, "uiLabel": "2% tier", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.", "categories": ["Gas", "Dining"] }
+          { "key": "5pct", "fallbackRate": 1, "cap": 25000, "uiLabel": "5% tier", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.", "categories": ["Internet", "Office Supplies", "Phone"] },
+          { "key": "2pct", "fallbackRate": 1, "cap": 25000, "uiLabel": "2% tier", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.", "categories": ["Gas", "Dining"] }
         ]
       }
     },
@@ -353,7 +353,7 @@
       "Other": 1,
       "spendCaps": {
         "capPeriod": "annual",
-        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 6000, "uiLabel": "2% groceries/gas", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Citi's portal and edit the amount here.", "categories": ["Groceries", "Gas"] }]
+        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 6000, "uiLabel": "2% groceries/gas", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Citi's portal and edit the amount here.", "categories": ["Groceries", "Gas"] }]
       }
     },
 
@@ -448,7 +448,7 @@
       ],
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Rotating bonus categories change each quarter — auto-tracking isn't available. Check Discover's portal for your actual spend and enter it here.", "categories": ["Rotating"] }]
+        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Rotating"] }]
       }
     },
 
@@ -458,7 +458,7 @@
       "Other": 1,
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 1000, "uiLabel": "2% gas/dining", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Gas", "Dining"] }]
+        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 1000, "uiLabel": "2% gas/dining", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Gas", "Dining"] }]
       }
     },
 
@@ -490,7 +490,7 @@
       ],
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Rotating bonus categories change each quarter — auto-tracking isn't available. Check Discover's portal for your actual spend and enter it here.", "categories": ["Rotating"] }]
+        "tiers": [{ "key": "rotating", "fallbackRate": 1, "cap": 1500, "uiLabel": "5% rotating", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Rotating"] }]
       }
     },
 
@@ -500,7 +500,7 @@
       "Other": 1,
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 1000, "uiLabel": "2% gas/dining", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Gas", "Dining"] }]
+        "tiers": [{ "key": "2pct", "fallbackRate": 1, "cap": 1000, "uiLabel": "2% gas/dining", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.", "categories": ["Gas", "Dining"] }]
       }
     },
 
@@ -529,7 +529,7 @@
       ],
       "spendCaps": {
         "capPeriod": "quarterly",
-        "tiers": [{ "key": "gas", "fallbackRate": 1, "cap": 1000, "uiLabel": "4x gas/EV", "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check U.S. Bank's portal and edit the amount here.", "categories": ["Gas", "EV Charging"] }]
+        "tiers": [{ "key": "gas", "fallbackRate": 1, "cap": 1000, "uiLabel": "4x gas/EV", "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check U.S. Bank's portal and edit the amount here.", "categories": ["Gas", "EV Charging"] }]
       }
     },
 
@@ -560,7 +560,7 @@
         "tiers": [
           {
             "key": "top", "rateKey": "Top Category", "slots": 2, "uiLabel": "5%",
-            "cap": 2000, "capNote": "Only counts online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check U.S. Bank's portal and edit the amount here.",
+            "cap": 2000, "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check U.S. Bank's portal and edit the amount here.",
             "choices": [
               { "label": "TV, Internet & Streaming", "categories": ["Streaming", "Internet"] },
               { "label": "Clothing Stores",          "categories": ["Clothing"] },
