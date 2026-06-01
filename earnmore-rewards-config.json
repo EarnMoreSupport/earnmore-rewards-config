@@ -643,43 +643,69 @@
       "Dining": 3,
       "Other": 1.5
     },
+    "Citi AAdvantage Platinum Select": {
+      "American Airlines": 2,
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1
+    },
+    "Citi AAdvantage Globe": {
+      "AAdvantage Hotels": 6,
+      "American Airlines": 3,
+      "Dining": 2,
+      "Transit": 2,
+      "Other": 1
+    },
+    "Citi AAdvantage Executive": {
+      "AAdvantage Hotels": 10,
+      "AAdvantage Cars": 10,
+      "American Airlines": 4,
+      "Other": 1
+    },
+    "Citi AAdvantage Business": {
+      "American Airlines": 2,
+      "Gas": 2,
+      "Internet": 2,
+      "Phone": 2,
+      "Other": 1
+    },
     "Delta SkyMiles Blue American Express": {
-      "Flights": 2,
+      "Delta": 2,
       "Dining": 2,
       "Other": 1
     },
     "Delta SkyMiles Gold American Express": {
-      "Flights": 2,
+      "Delta": 2,
       "Dining": 2,
       "Groceries": 2,
       "Other": 1
     },
     "Delta SkyMiles Platinum American Express": {
-      "Flights": 3,
+      "Delta": 3,
       "Hotels": 3,
       "Dining": 2,
       "Groceries": 2,
       "Other": 1
     },
     "Delta SkyMiles Reserve American Express": {
-      "Flights": 3,
+      "Delta": 3,
       "Other": 1
     },
     "Delta SkyMiles Gold Business American Express": {
-      "Flights": 2,
+      "Delta": 2,
       "Shipping": 2,
       "Advertising": 2,
       "Transit": 1.5,
       "Other": 1
     },
     "Delta SkyMiles Platinum Business American Express": {
-      "Flights": 3,
+      "Delta": 3,
       "Transit": 1.5,
       "Shipping": 1.5,
       "Other": 1
     },
     "Delta SkyMiles Reserve Business American Express": {
-      "Flights": 3,
+      "Delta": 3,
       "Transit": 1.5,
       "Shipping": 1.5,
       "Other": 1
@@ -1214,6 +1240,17 @@
     "Wells Fargo Active Cash": {
       "Other": 2
     },
+    "Wells Fargo Attune": {
+      "Beauty": 4,
+      "Fitness": 4,
+      "Entertainment": 4,
+      "Pet Supplies": 4,
+      "Sporting Goods": 4,
+      "Streaming": 4,
+      "EV Charging": 4,
+      "Transit": 4,
+      "Other": 1
+    },
     "Wells Fargo Autograph": {
       "Dining": 3,
       "Travel": 3,
@@ -1261,10 +1298,29 @@
     "amazon.co.uk": "Amazon",
     "amazon.com": "Amazon",
 
+    "benefitcosmetics.com": "Beauty",
+    "colourpop.com": "Beauty",
+    "esteelauder.com": "Beauty",
+    "fentybeauty.com": "Beauty",
+    "fragrancenet.com": "Beauty",
+    "glossier.com": "Beauty",
+    "kiehls.com": "Beauty",
+    "lush.com": "Beauty",
+    "maccosmetics.com": "Beauty",
+    "morphe.com": "Beauty",
+    "narscosmetics.com": "Beauty",
+    "olaplex.com": "Beauty",
     "sallybeauty.com": "Beauty",
     "sephora.com": "Beauty",
+    "spacenk.com": "Beauty",
+    "tatcha.com": "Beauty",
+    "thebodyshop.com": "Beauty",
+    "theordinary.com": "Beauty",
+    "toofaced.com": "Beauty",
     "ulta.com": "Beauty",
+    "urbandecay.com": "Beauty",
 
+    "aadvantagecars.com": "AAdvantage Cars",
     "alamo.com": "Car Rentals",
     "avis.com": "Car Rentals",
     "budget.com": "Car Rentals",
@@ -1347,7 +1403,9 @@
     "chargepoint.com": "EV Charging",
     "electrifyamerica.com": "EV Charging",
     "evgo.com": "EV Charging",
+    "flo.com": "EV Charging",
     "plugshare.com": "EV Charging",
+    "shellrecharge.com": "EV Charging",
 
     "adorama.com": "Electronics",
     "bestbuy.com": "Electronics",
@@ -1441,7 +1499,7 @@
     "orangetheory.com": "Fitness",
     "planetfitness.com": "Fitness",
 
-    "aa.com": "Flights",
+    "aa.com": "American Airlines",
     "aeromexico.com": "Flights",
     "aircanada.com": "Flights",
     "airfrance.com": "Flights",
@@ -1450,7 +1508,7 @@
     "ana.co.jp": "Flights",
     "avianca.com": "Flights",
     "britishairways.com": "Flights",
-    "delta.com": "Flights",
+    "delta.com": "Delta",
     "easyjet.com": "Flights",
     "emirates.com": "Flights",
     "flydubai.com": "Flights",
@@ -1542,6 +1600,7 @@
     "toolstation.com": "Home Improvement",
     "truevalue.com": "Home Improvement",
 
+    "aadvantagehotels.com": "AAdvantage Hotels",
     "ac-hotels.com": "Hotels",
     "alofthotels.com": "Hotels",
     "andazhotels.com": "Hotels",
@@ -1684,9 +1743,15 @@
     "wish.com": "Other",
     "wix.com": "Other",
 
+    "1800petmeds.com": "Pet Supplies",
+    "barkbox.com": "Pet Supplies",
     "chewy.com": "Pet Supplies",
+    "entirelypets.com": "Pet Supplies",
     "petco.com": "Pet Supplies",
+    "petflow.com": "Pet Supplies",
+    "petplate.com": "Pet Supplies",
     "petsmart.com": "Pet Supplies",
+    "vetsource.com": "Pet Supplies",
 
     "boost.com": "Phone",
     "boostmobile.com": "Phone",
@@ -1707,10 +1772,16 @@
     "usps.com": "Shipping",
 
     "academy.com": "Sporting Goods",
+    "backcountry.com": "Sporting Goods",
     "basspro.com": "Sporting Goods",
     "cabelas.com": "Sporting Goods",
     "dickssportinggoods.com": "Sporting Goods",
+    "evo.com": "Sporting Goods",
+    "garmin.com": "Sporting Goods",
+    "moosejaw.com": "Sporting Goods",
     "rei.com": "Sporting Goods",
+    "salomon.com": "Sporting Goods",
+    "swimoutlet.com": "Sporting Goods",
 
     "acorn.tv": "Streaming",
     "amcplus.com": "Streaming",
@@ -1755,7 +1826,10 @@
     "tv.apple.com": "Streaming",
     "youtube.com": "Streaming",
 
+    "flixbus.com": "Transit",
+    "greyhound.com": "Transit",
     "lyft.com": "Transit",
+    "megabus.com": "Transit",
     "uber.com": "Transit",
 
     "airbnb.com": "Travel",
