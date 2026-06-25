@@ -12,7 +12,7 @@
       "Internet": 2,
       "Transit": 2,
       "Other": 1,
-      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines'). 2x on gas, EV charging, streaming, cable/internet, and local transit. Rebranding to Atmos™ Rewards Ascent Visa Signature® — rates unchanged."
+      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines')."
     },
     "Amazon Prime Visa": {
       "Amazon": 5,
@@ -187,7 +187,6 @@
       "Apple Pay Partners": 3,
       "Apple Pay": 2,
       "Other": 1,
-      "trackingNote": "3% at Apple and partner merchants (Ace Hardware, Booking.com, ChargePoint, Exxon/Mobil, Hertz, Nike, Uber, Uber Eats, Walgreens) with Apple Pay. 2% with Apple Pay at any other merchant. Duane Reade 3% is in-store only (NY/NJ) — not trackable by domain. Physical card earns 1%.",
       "applePayPartnerDomains": [
         "apple.com",
         "acehardware.com",
@@ -360,18 +359,27 @@
     },
     "Bilt Blue": {
       "Other": 1,
-      "trackingNote": "Base rate is 1x. Earns 4x at participating Bilt dining partner restaurants (visible in the Bilt app), 3x on hotels and 2x on flights via the Bilt Travel portal, and 3x on Lyft. Also earns on housing payments via the Bilt platform. Replaced the Wells Fargo Bilt Mastercard in February 2026."
+      "trackingNote": "Portal / Partner Rates are not tracked."
     },
     "Bilt Obsidian": {
-      "Dining": 3,
-      "Groceries": 3,
+      "Choice Category": 3,
       "Travel": 2,
       "Other": 1,
-      "trackingNote": "3x applies to EITHER dining OR groceries — you choose one category at card activation (default is dining), changeable each January. EarnMore shows 3x on both since it cannot know your selection. If you chose Groceries, the 3x applies up to $25,000/year then drops to 1x. Up to 6x at Bilt dining partner restaurants (portal only, not tracked). Flights and hotels via the Bilt Travel portal earn 3x — shown here as 2x base rate."
+      "choiceOptions": {
+        "period": "yearly", "capPeriod": "yearly",
+        "tiers": [{
+          "key": "choice", "rateKey": "Choice Category", "slots": 1, "uiLabel": "3x category",
+          "cap": 25000, "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bilt's portal and edit the amount here.",
+          "choices": [
+            { "label": "Dining",    "categories": ["Dining"] },
+            { "label": "Groceries", "categories": ["Groceries"] }
+          ]
+        }]
+      },
     },
     "Bilt Palladium": {
       "Other": 2,
-      "trackingNote": "2x base on all purchases. Earns up to 5x at participating Bilt dining partners, 4x on hotels and 3x on flights through the Bilt Travel portal, and 4x on Lyft. Also earns on housing payments via the Bilt platform. Partner/portal rates are not tracked."
+      "trackingNote": "Portal / Partner Rates are not tracked."
     },
     "Capital One Quicksilver": {
       "Capital One Travel": 5,
@@ -1111,7 +1119,7 @@
       "Groceries": 3,
       "Other": 2,
       "spendCaps": {
-        "capPeriod": "anniversary",
+        "capPeriod": "annual",
         "tiers": [
           {
             "key": "bonus",
@@ -1455,7 +1463,6 @@
         "slingtv.com",
         "spotify.com"
       ],
-      "trackingNote": "2x on all other travel (hotels, flights, car rentals, transit) via the Travel category. Streaming limited to confirmed qualifying services: Netflix, Hulu, Disney+, Sling, and Spotify."
     },
     "Wells Fargo Active Cash": {
       "Other": 2
@@ -2088,5 +2095,101 @@
     "costco.com": "Wholesale Clubs",
     "samsclub.com": "Wholesale Clubs",
     "mrandmrssmith.com": "Hotels"
-  }
+  },
+  "cardMeta": {
+    "Alaska Airlines Visa Signature":                    { "color": "#0097A7", "abbr": "Alaska",   "group": "Alaska Airlines — Personal (Bank of America)" },
+    "American Express Green":                            { "color": "#007A4D", "abbr": "Amex",     "group": "American Express — Personal" },
+    "American Express Gold":                             { "color": "#B8860B", "abbr": "Amex",     "group": "American Express — Personal" },
+    "American Express Platinum":                         { "color": "#A0A0A0", "abbr": "Amex",     "group": "American Express — Personal" },
+    "American Express Blue Cash Everyday":               { "color": "#006FCF", "abbr": "Amex",     "group": "American Express — Personal" },
+    "American Express Blue Cash Preferred":              { "color": "#006FCF", "abbr": "Amex",     "group": "American Express — Personal" },
+    "American Express Blue Business Plus":               { "color": "#006FCF", "abbr": "Amex",     "group": "American Express — Business" },
+    "American Express Business Gold":                    { "color": "#B8860B", "abbr": "Amex",     "group": "American Express — Business" },
+    "American Express Business Platinum":                { "color": "#A0A0A0", "abbr": "Amex",     "group": "American Express — Business" },
+    "Apple Card":                                        { "color": "#636366", "abbr": "Apple",    "group": "Apple — Personal (Goldman Sachs)" },
+    "Bank of America Customized Cash Rewards":           { "color": "#E31837", "abbr": "BofA",     "group": "Bank of America — Personal",  "portal": "bankofamerica.com" },
+    "Bank of America Unlimited Cash Rewards":            { "color": "#E31837", "abbr": "BofA",     "group": "Bank of America — Personal" },
+    "Bank of America Travel Rewards":                    { "color": "#E31837", "abbr": "BofA",     "group": "Bank of America — Personal" },
+    "Bank of America Premium Rewards":                   { "color": "#E31837", "abbr": "BofA",     "group": "Bank of America — Personal" },
+    "Bank of America Premium Rewards Elite":             { "color": "#E31837", "abbr": "BofA",     "group": "Bank of America — Personal" },
+    "Bank of America Business Advantage Customized Cash Rewards": { "color": "#E31837", "abbr": "BofA", "group": "Bank of America — Business", "portal": "bankofamerica.com" },
+    "Bank of America Business Advantage Unlimited Cash Rewards":  { "color": "#E31837", "abbr": "BofA", "group": "Bank of America — Business" },
+    "Bank of America Business Advantage Travel Rewards":          { "color": "#E31837", "abbr": "BofA", "group": "Bank of America — Business" },
+    "Bilt Blue":                                         { "color": "#2563EB", "abbr": "BILT",     "group": "Bilt — Personal (Column N.A.)" },
+    "Bilt Obsidian":                                     { "color": "#1C1C1E", "abbr": "BILT",     "group": "Bilt — Personal (Column N.A.)",        "portal": "biltrewards.com" },
+    "Bilt Palladium":                                    { "color": "#8E8E93", "abbr": "BILT",     "group": "Bilt — Personal (Column N.A.)" },
+    "Capital One VentureOne":                            { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One Quicksilver":                           { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One QuicksilverOne":                        { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One Savor":                                 { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One Venture":                               { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One Venture X":                             { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Personal" },
+    "Capital One Spark Cash Plus":                       { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Business" },
+    "Capital One Spark Miles":                           { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Business" },
+    "Capital One Venture X Business":                    { "color": "#CC0000", "abbr": "CapOne",   "group": "Capital One — Business" },
+    "Chase Freedom Rise":                                { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Personal" },
+    "Chase Freedom Unlimited":                           { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Personal" },
+    "Chase Freedom Flex":                                { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Personal",            "portal": "chase.com" },
+    "Chase Sapphire Preferred":                          { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Personal" },
+    "Chase Sapphire Reserve":                            { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Personal" },
+    "Chase Ink Business Cash":                           { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Business" },
+    "Chase Ink Business Unlimited":                      { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Business" },
+    "Chase Ink Business Preferred":                      { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Business" },
+    "Chase Ink Business Premier":                        { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Business" },
+    "Chase Sapphire Reserve for Business":               { "color": "#115EA3", "abbr": "Chase",    "group": "Chase — Business" },
+    "Citi AAdvantage Platinum Select":                   { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi AAdvantage Globe":                             { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi AAdvantage Executive":                         { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi Double Cash":                                  { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi Custom Cash":                                  { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi Rewards+":                                     { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi Strata Premier":                               { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi Strata Elite":                                 { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Personal" },
+    "Citi AAdvantage Business":                          { "color": "#003B6F", "abbr": "Citi",     "group": "Citi — Business" },
+    "Costco Anywhere Visa by Citi":                      { "color": "#E31837", "abbr": "Costco",   "group": "Costco — Personal (Citi)" },
+    "Delta SkyMiles Blue American Express":              { "color": "#003366", "abbr": "Delta",    "group": "Delta SkyMiles — Personal (American Express)" },
+    "Delta SkyMiles Gold American Express":              { "color": "#B8860B", "abbr": "Delta",    "group": "Delta SkyMiles — Personal (American Express)" },
+    "Delta SkyMiles Platinum American Express":          { "color": "#A0A0A0", "abbr": "Delta",    "group": "Delta SkyMiles — Personal (American Express)" },
+    "Delta SkyMiles Reserve American Express":           { "color": "#1A1A1A", "abbr": "Delta",    "group": "Delta SkyMiles — Personal (American Express)" },
+    "Delta SkyMiles Gold Business American Express":     { "color": "#B8860B", "abbr": "Delta",    "group": "Delta SkyMiles — Business (American Express)" },
+    "Delta SkyMiles Platinum Business American Express": { "color": "#A0A0A0", "abbr": "Delta",    "group": "Delta SkyMiles — Business (American Express)" },
+    "Delta SkyMiles Reserve Business American Express":  { "color": "#1A1A1A", "abbr": "Delta",    "group": "Delta SkyMiles — Business (American Express)" },
+    "Discover It Cash Back":                             { "color": "#FF6600", "abbr": "Discover", "group": "Discover — Personal",          "portal": "discover.com" },
+    "Discover it Chrome":                                { "color": "#FF6600", "abbr": "Discover", "group": "Discover — Personal" },
+    "Discover it Miles":                                 { "color": "#FF6600", "abbr": "Discover", "group": "Discover — Personal" },
+    "Discover it Student Cash Back":                     { "color": "#FF6600", "abbr": "Discover", "group": "Discover — Personal",          "portal": "discover.com" },
+    "Discover it Secured":                               { "color": "#FF6600", "abbr": "Discover", "group": "Discover — Personal" },
+    "Hilton Honors American Express":                    { "color": "#0074C0", "abbr": "Hilton",   "group": "Hilton Honors — Personal (American Express)" },
+    "Hilton Honors American Express Surpass":            { "color": "#0074C0", "abbr": "Hilton",   "group": "Hilton Honors — Personal (American Express)" },
+    "Hilton Honors American Express Aspire":             { "color": "#C9952E", "abbr": "Hilton",   "group": "Hilton Honors — Personal (American Express)" },
+    "IHG One Rewards Premier":                           { "color": "#009BAA", "abbr": "IHG",      "group": "IHG One Rewards — Personal (Chase)" },
+    "JetBlue Card":                                      { "color": "#00A1DE", "abbr": "JetBlue",  "group": "JetBlue — Personal (Barclays)" },
+    "JetBlue Plus":                                      { "color": "#00A1DE", "abbr": "JetBlue",  "group": "JetBlue — Personal (Barclays)" },
+    "Marriott Bonvoy Boundless":                         { "color": "#CC2027", "abbr": "Marriott", "group": "Marriott Bonvoy — Personal (Chase)" },
+    "Marriott Bonvoy Brilliant":                         { "color": "#CC2027", "abbr": "Marriott", "group": "Marriott Bonvoy — Personal (American Express)" },
+    "Southwest Rapid Rewards Plus":                      { "color": "#304CB2", "abbr": "SW",       "group": "Southwest Rapid Rewards — Personal (Chase)" },
+    "Southwest Rapid Rewards Premier":                   { "color": "#304CB2", "abbr": "SW",       "group": "Southwest Rapid Rewards — Personal (Chase)" },
+    "Southwest Rapid Rewards Priority":                  { "color": "#E31837", "abbr": "SW",       "group": "Southwest Rapid Rewards — Personal (Chase)" },
+    "U.S. Bank Smartly Visa Signature":                  { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Personal" },
+    "U.S. Bank Altitude Connect":                        { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Personal" },
+    "U.S. Bank Altitude Go":                             { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Personal" },
+    "U.S. Bank Cash+":                                   { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Personal",        "portal": "usbank.com" },
+    "U.S. Bank Altitude Reserve":                        { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Personal" },
+    "U.S. Bank Business Altitude Connect":               { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Business" },
+    "U.S. Bank Triple Cash Rewards":                     { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Business" },
+    "U.S. Bank Business Altitude Power":                 { "color": "#42A5F5", "abbr": "USBank",   "group": "U.S. Bank — Business" },
+    "United Explorer":                                   { "color": "#1259C3", "abbr": "United",   "group": "United — Personal (Chase)" },
+    "United Quest":                                      { "color": "#1259C3", "abbr": "United",   "group": "United — Personal (Chase)" },
+    "United Club Infinite":                              { "color": "#1259C3", "abbr": "United",   "group": "United — Personal (Chase)" },
+    "United Explorer Card":                              { "color": "#1259C3", "abbr": "United",   "group": "United — Personal (Chase)" },
+    "Wells Fargo Active Cash":                           { "color": "#CD0000", "abbr": "WF",       "group": "Wells Fargo — Personal" },
+    "Wells Fargo Attune":                                { "color": "#CD0000", "abbr": "WF",       "group": "Wells Fargo — Personal" },
+    "Wells Fargo Autograph":                             { "color": "#CD0000", "abbr": "WF",       "group": "Wells Fargo — Personal" },
+    "Wells Fargo Autograph Journey":                     { "color": "#CD0000", "abbr": "WF",       "group": "Wells Fargo — Personal" },
+    "Wells Fargo Signify Business Cash":                 { "color": "#CD0000", "abbr": "WF",       "group": "Wells Fargo — Business" },
+    "World of Hyatt":                                    { "color": "#C4A052", "abbr": "WoH",      "group": "World of Hyatt — Personal (Chase)" },
+    "Amazon Prime Visa":                                 { "color": "#FF9900", "abbr": "Amazon",   "group": "Amazon — Personal (Chase)" },
+    "Amazon Visa":                                       { "color": "#FF9900", "abbr": "Amazon",   "group": "Amazon — Personal (Chase)" }
+  },
+  "disabledCards": []
 }
