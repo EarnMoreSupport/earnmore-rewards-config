@@ -375,7 +375,7 @@
             { "label": "Groceries", "categories": ["Groceries"] }
           ]
         }]
-      },
+      }
     },
     "Bilt Palladium": {
       "Other": 2,
@@ -739,7 +739,7 @@
             "fallbackRate": 1,
             "cap": 7000,
             "uiLabel": "4% gas/EV",
-            "capNote": "Costco gas stations earn 5% in-person — not trackable here. The $7,000 annual cap is combined across all gas and EV charging. Check Citi's portal for your complete gas/EV total.",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Citi's portal and edit the amount here.",
             "categories": [
               "Gas",
               "EV Charging"
@@ -1462,7 +1462,7 @@
         "disneyplus.com",
         "slingtv.com",
         "spotify.com"
-      ],
+      ]
     },
     "Wells Fargo Active Cash": {
       "Other": 2
