@@ -1,10 +1,19 @@
 {
   "meta": {
-    "last_verified": "2026-04",
+    "last_verified": "2026-06",
     "notes": "Rewards rates subject to change. Always confirm on issuer website before applying. Portal rates (e.g. Chase Travel, Amex Travel, Capital One Travel) only apply when booking through that issuer's portal. Categories earning at the same rate as Other are omitted."
   },
-
   "cardsDatabase": {
+    "Alaska Airlines Visa Signature": {
+      "Alaska Airlines": 3,
+      "Gas": 2,
+      "EV Charging": 2,
+      "Streaming": 2,
+      "Internet": 2,
+      "Transit": 2,
+      "Other": 1,
+      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines'). 2x on gas, EV charging, streaming, cable/internet, and local transit. Rebranding to Atmos™ Rewards Ascent Visa Signature® — rates unchanged."
+    },
     "Amazon Prime Visa": {
       "Amazon": 5,
       "Whole Foods": 5,
@@ -23,37 +32,21 @@
       "Transit": 2,
       "Other": 1
     },
-    "American Express Green": {
-      "Travel": 3,
-      "Transit": 3,
-      "Dining": 3,
-      "Other": 1
-    },
-    "American Express Gold": {
-      "Dining": 4,
-      "Groceries": 4,
-      "Flights": 3,
-      "Other": 1,
+    "American Express Blue Business Plus": {
+      "Other": 2,
       "spendCaps": {
         "capPeriod": "annual",
         "tiers": [
           {
-            "key": "groceries",
+            "key": "all",
             "fallbackRate": 1,
-            "cap": 25000,
-            "uiLabel": "4x groceries",
+            "cap": 50000,
+            "uiLabel": "2x all purchases",
             "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.",
-            "categories": [
-              "Groceries"
-            ]
+            "categories": null
           }
         ]
       }
-    },
-    "American Express Platinum": {
-      "Flights": 5,
-      "Amex Travel": 5,
-      "Other": 1
     },
     "American Express Blue Cash Everyday": {
       "Groceries": 3,
@@ -149,30 +142,128 @@
         "nba.com"
       ]
     },
-    "American Express Blue Business Plus": {
-      "Other": 2,
-      "spendCaps": {
-        "capPeriod": "annual",
-        "tiers": [
-          {
-            "key": "all",
-            "fallbackRate": 1,
-            "cap": 50000,
-            "uiLabel": "2x all purchases",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.",
-            "categories": null
-          }
-        ]
-      }
-    },
     "American Express Business Gold": {
       "Top Category": 4,
       "Other": 1,
-      "trackingNote": "Spend cap tracking isn't available \u2014 this card's bonus categories are determined automatically by Amex based on your highest monthly spending."
+      "trackingNote": "Spend cap tracking isn't available — this card's bonus categories are determined automatically by Amex based on your highest monthly spending."
     },
     "American Express Business Platinum": {
       "Amex Travel": 5,
       "Other": 1
+    },
+    "American Express Gold": {
+      "Dining": 4,
+      "Groceries": 4,
+      "Flights": 3,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "annual",
+        "tiers": [
+          {
+            "key": "groceries",
+            "fallbackRate": 1,
+            "cap": 25000,
+            "uiLabel": "4x groceries",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check American Express's portal and edit the amount here.",
+            "categories": [
+              "Groceries"
+            ]
+          }
+        ]
+      }
+    },
+    "American Express Green": {
+      "Travel": 3,
+      "Transit": 3,
+      "Dining": 3,
+      "Other": 1
+    },
+    "American Express Platinum": {
+      "Flights": 5,
+      "Amex Travel": 5,
+      "Other": 1
+    },
+    "Apple Card": {
+      "Apple Pay Partners": 3,
+      "Apple Pay": 2,
+      "Other": 1,
+      "trackingNote": "3% at Apple and partner merchants (Ace Hardware, Booking.com, ChargePoint, Exxon/Mobil, Hertz, Nike, Uber, Uber Eats, Walgreens) with Apple Pay. 2% with Apple Pay at any other merchant. Duane Reade 3% is in-store only (NY/NJ) — not trackable by domain. Physical card earns 1%.",
+      "applePayPartnerDomains": [
+        "apple.com",
+        "acehardware.com",
+        "booking.com",
+        "chargepoint.com",
+        "exxon.com",
+        "mobil.com",
+        "hertz.com",
+        "nike.com",
+        "swoosh.com",
+        "uber.com",
+        "ubereats.com",
+        "walgreens.com"
+      ]
+    },
+    "Bank of America Business Advantage Customized Cash Rewards": {
+      "Choice Category": 3,
+      "Dining": 2,
+      "Other": 1,
+      "choiceOptions": {
+        "period": "monthly",
+        "capPeriod": "annual",
+        "tiers": [
+          {
+            "key": "choice",
+            "rateKey": "Choice Category",
+            "slots": 1,
+            "uiLabel": "3% category",
+            "cap": 50000,
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+            "choices": [
+              {
+                "label": "Gas",
+                "categories": [
+                  "Gas"
+                ]
+              },
+              {
+                "label": "Dining",
+                "categories": [
+                  "Dining"
+                ]
+              },
+              {
+                "label": "Travel",
+                "categories": [
+                  "Travel",
+                  "Hotels",
+                  "Flights",
+                  "Car Rentals"
+                ]
+              },
+              {
+                "label": "TV, Telecom & Streaming",
+                "categories": [
+                  "Streaming",
+                  "Internet",
+                  "Phone"
+                ]
+              },
+              {
+                "label": "Office Supplies",
+                "categories": [
+                  "Office Supplies"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Bank of America Business Advantage Travel Rewards": {
+      "Other": 1.5
+    },
+    "Bank of America Business Advantage Unlimited Cash Rewards": {
+      "Other": 1.5
     },
     "Bank of America Customized Cash Rewards": {
       "Choice Category": 3,
@@ -250,13 +341,6 @@
         ]
       }
     },
-    "Bank of America Unlimited Cash Rewards": {
-      "Other": 1.5
-    },
-    "Bank of America Travel Rewards": {
-      "BofA Travel": 3,
-      "Other": 1.5
-    },
     "Bank of America Premium Rewards": {
       "Travel": 2,
       "Dining": 2,
@@ -267,71 +351,27 @@
       "Dining": 2,
       "Other": 1.5
     },
-    "Bank of America Business Advantage Customized Cash Rewards": {
-      "Choice Category": 3,
-      "Dining": 2,
+    "Bank of America Travel Rewards": {
+      "BofA Travel": 3,
+      "Other": 1.5
+    },
+    "Bank of America Unlimited Cash Rewards": {
+      "Other": 1.5
+    },
+    "Bilt Blue": {
       "Other": 1,
-      "choiceOptions": {
-        "period": "monthly",
-        "capPeriod": "annual",
-        "tiers": [
-          {
-            "key": "choice",
-            "rateKey": "Choice Category",
-            "slots": 1,
-            "uiLabel": "3% category",
-            "cap": 50000,
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
-            "choices": [
-              {
-                "label": "Gas",
-                "categories": [
-                  "Gas"
-                ]
-              },
-              {
-                "label": "Dining",
-                "categories": [
-                  "Dining"
-                ]
-              },
-              {
-                "label": "Travel",
-                "categories": [
-                  "Travel",
-                  "Hotels",
-                  "Flights",
-                  "Car Rentals"
-                ]
-              },
-              {
-                "label": "TV, Telecom & Streaming",
-                "categories": [
-                  "Streaming",
-                  "Internet",
-                  "Phone"
-                ]
-              },
-              {
-                "label": "Office Supplies",
-                "categories": [
-                  "Office Supplies"
-                ]
-              }
-            ]
-          }
-        ]
-      }
+      "trackingNote": "Base rate is 1x. Earns 4x at participating Bilt dining partner restaurants (visible in the Bilt app), 3x on hotels and 2x on flights via the Bilt Travel portal, and 3x on Lyft. Also earns on housing payments via the Bilt platform. Replaced the Wells Fargo Bilt Mastercard in February 2026."
     },
-    "Bank of America Business Advantage Unlimited Cash Rewards": {
-      "Other": 1.5
+    "Bilt Obsidian": {
+      "Dining": 3,
+      "Groceries": 3,
+      "Travel": 2,
+      "Other": 1,
+      "trackingNote": "3x applies to EITHER dining OR groceries — you choose one category at card activation (default is dining), changeable each January. EarnMore shows 3x on both since it cannot know your selection. If you chose Groceries, the 3x applies up to $25,000/year then drops to 1x. Up to 6x at Bilt dining partner restaurants (portal only, not tracked). Flights and hotels via the Bilt Travel portal earn 3x — shown here as 2x base rate."
     },
-    "Bank of America Business Advantage Travel Rewards": {
-      "Other": 1.5
-    },
-    "Capital One VentureOne": {
-      "Capital One Travel": 5,
-      "Other": 1.25
+    "Bilt Palladium": {
+      "Other": 2,
+      "trackingNote": "2x base on all purchases. Earns up to 5x at participating Bilt dining partners, 4x on hotels and 3x on flights through the Bilt Travel portal, and 4x on Lyft. Also earns on housing payments via the Bilt platform. Partner/portal rates are not tracked."
     },
     "Capital One Quicksilver": {
       "Capital One Travel": 5,
@@ -350,6 +390,14 @@
       "Groceries": 3,
       "Other": 1
     },
+    "Capital One Spark Cash Plus": {
+      "Capital One Travel": 5,
+      "Other": 2
+    },
+    "Capital One Spark Miles": {
+      "Capital One Travel": 5,
+      "Other": 2
+    },
     "Capital One Venture": {
       "Capital One Travel": 5,
       "Other": 2
@@ -359,27 +407,14 @@
       "Capital One Travel Select": 5,
       "Other": 2
     },
-    "Capital One Spark Cash Plus": {
-      "Capital One Travel": 5,
-      "Other": 2
-    },
-    "Capital One Spark Miles": {
-      "Capital One Travel": 5,
-      "Other": 2
-    },
     "Capital One Venture X Business": {
       "Capital One Travel": 10,
       "Capital One Travel Select": 5,
       "Other": 2
     },
-    "Chase Freedom Rise": {
-      "Other": 1.5
-    },
-    "Chase Freedom Unlimited": {
-      "Chase Travel": 5,
-      "Dining": 3,
-      "Drugstores": 3,
-      "Other": 1.5
+    "Capital One VentureOne": {
+      "Capital One Travel": 5,
+      "Other": 1.25
     },
     "Chase Freedom Flex": {
       "categories": {
@@ -502,6 +537,66 @@
         ]
       }
     },
+    "Chase Freedom Rise": {
+      "Other": 1.5
+    },
+    "Chase Freedom Unlimited": {
+      "Chase Travel": 5,
+      "Dining": 3,
+      "Drugstores": 3,
+      "Other": 1.5
+    },
+    "Chase Ink Business Cash": {
+      "Internet": 5,
+      "Office Supplies": 5,
+      "Phone": 5,
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "anniversary",
+        "tiers": [
+          {
+            "key": "5pct",
+            "fallbackRate": 1,
+            "cap": 25000,
+            "uiLabel": "5% tier",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
+            "categories": [
+              "Internet",
+              "Office Supplies",
+              "Phone"
+            ]
+          },
+          {
+            "key": "2pct",
+            "fallbackRate": 1,
+            "cap": 25000,
+            "uiLabel": "2% tier",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
+            "categories": [
+              "Gas",
+              "Dining"
+            ]
+          }
+        ]
+      }
+    },
+    "Chase Ink Business Preferred": {
+      "Chase Travel": 3,
+      "Travel": 3,
+      "Shipping": 3,
+      "Advertising": 3,
+      "Internet": 3,
+      "Phone": 3,
+      "Other": 1
+    },
+    "Chase Ink Business Premier": {
+      "Other": 2
+    },
+    "Chase Ink Business Unlimited": {
+      "Other": 1.5
+    },
     "Chase Sapphire Preferred": {
       "Chase Travel": 5,
       "Dining": 3,
@@ -541,72 +636,47 @@
       "Dining": 3,
       "Other": 1
     },
-    "Chase Ink Business Cash": {
-      "Internet": 5,
-      "Office Supplies": 5,
-      "Phone": 5,
-      "Gas": 2,
-      "Dining": 2,
-      "Other": 1,
-      "spendCaps": {
-        "capPeriod": "anniversary",
-        "tiers": [
-          {
-            "key": "5pct",
-            "fallbackRate": 1,
-            "cap": 25000,
-            "uiLabel": "5% tier",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
-            "categories": [
-              "Internet",
-              "Office Supplies",
-              "Phone"
-            ]
-          },
-          {
-            "key": "2pct",
-            "fallbackRate": 1,
-            "cap": 25000,
-            "uiLabel": "2% tier",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
-            "categories": [
-              "Gas",
-              "Dining"
-            ]
-          }
-        ]
-      }
-    },
-    "Chase Ink Business Unlimited": {
-      "Other": 1.5
-    },
-    "Chase Ink Business Preferred": {
-      "Chase Travel": 3,
-      "Travel": 3,
-      "Shipping": 3,
-      "Advertising": 3,
-      "Internet": 3,
-      "Phone": 3,
-      "Other": 1
-    },
-    "Chase Ink Business Premier": {
-      "Other": 2
-    },
     "Chase Sapphire Reserve for Business": {
       "Chase Travel": 8,
       "Flights": 4,
       "Hotels": 4,
       "Other": 1
     },
-    "Citi Double Cash": {
-      "Citi Travel": 5,
-      "Other": 2
+    "Citi AAdvantage Business": {
+      "American Airlines": 2,
+      "Gas": 2,
+      "Internet": 2,
+      "Phone": 2,
+      "Other": 1
+    },
+    "Citi AAdvantage Executive": {
+      "AAdvantage Hotels": 10,
+      "AAdvantage Cars": 10,
+      "American Airlines": 4,
+      "Other": 1
+    },
+    "Citi AAdvantage Globe": {
+      "AAdvantage Hotels": 6,
+      "American Airlines": 3,
+      "Dining": 2,
+      "Transit": 2,
+      "Other": 1
+    },
+    "Citi AAdvantage Platinum Select": {
+      "American Airlines": 2,
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1
     },
     "Citi Custom Cash": {
       "Top Category": 5,
       "Citi Travel": 4,
       "Other": 1,
-      "trackingNote": "Spend cap tracking isn't available \u2014 this card's 5% category is determined automatically by Citi based on your highest monthly spending across all purchases."
+      "trackingNote": "Spend cap tracking isn't available — this card's 5% category is determined automatically by Citi based on your highest monthly spending across all purchases."
+    },
+    "Citi Double Cash": {
+      "Citi Travel": 5,
+      "Other": 2
     },
     "Citi Rewards+": {
       "Groceries": 2,
@@ -629,6 +699,13 @@
         ]
       }
     },
+    "Citi Strata Elite": {
+      "Citi Travel": 12,
+      "Citi Travel Flights": 6,
+      "Dining Weekend": 6,
+      "Dining": 3,
+      "Other": 1.5
+    },
     "Citi Strata Premier": {
       "Citi Travel": 10,
       "Hotels": 3,
@@ -639,38 +716,29 @@
       "EV Charging": 3,
       "Other": 1
     },
-    "Citi Strata Elite": {
-      "Citi Travel": 12,
-      "Citi Travel Flights": 6,
-      "Dining Weekend": 6,
+    "Costco Anywhere Visa by Citi": {
+      "Gas": 4,
+      "EV Charging": 4,
       "Dining": 3,
-      "Other": 1.5
-    },
-    "Citi AAdvantage Platinum Select": {
-      "American Airlines": 2,
-      "Gas": 2,
-      "Dining": 2,
-      "Other": 1
-    },
-    "Citi AAdvantage Globe": {
-      "AAdvantage Hotels": 6,
-      "American Airlines": 3,
-      "Dining": 2,
-      "Transit": 2,
-      "Other": 1
-    },
-    "Citi AAdvantage Executive": {
-      "AAdvantage Hotels": 10,
-      "AAdvantage Cars": 10,
-      "American Airlines": 4,
-      "Other": 1
-    },
-    "Citi AAdvantage Business": {
-      "American Airlines": 2,
-      "Gas": 2,
-      "Internet": 2,
-      "Phone": 2,
-      "Other": 1
+      "Travel": 3,
+      "Wholesale Clubs": 2,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "annual",
+        "tiers": [
+          {
+            "key": "gas",
+            "fallbackRate": 1,
+            "cap": 7000,
+            "uiLabel": "4% gas/EV",
+            "capNote": "Costco gas stations earn 5% in-person — not trackable here. The $7,000 annual cap is combined across all gas and EV charging. Check Citi's portal for your complete gas/EV total.",
+            "categories": [
+              "Gas",
+              "EV Charging"
+            ]
+          }
+        ]
+      }
     },
     "Delta SkyMiles Blue American Express": {
       "Delta": 2,
@@ -683,17 +751,6 @@
       "Groceries": 2,
       "Other": 1
     },
-    "Delta SkyMiles Platinum American Express": {
-      "Delta": 3,
-      "Hotels": 3,
-      "Dining": 2,
-      "Groceries": 2,
-      "Other": 1
-    },
-    "Delta SkyMiles Reserve American Express": {
-      "Delta": 3,
-      "Other": 1
-    },
     "Delta SkyMiles Gold Business American Express": {
       "Delta": 2,
       "Shipping": 2,
@@ -701,10 +758,21 @@
       "Transit": 1.5,
       "Other": 1
     },
+    "Delta SkyMiles Platinum American Express": {
+      "Delta": 3,
+      "Hotels": 3,
+      "Dining": 2,
+      "Groceries": 2,
+      "Other": 1
+    },
     "Delta SkyMiles Platinum Business American Express": {
       "Delta": 3,
       "Transit": 1.5,
       "Shipping": 1.5,
+      "Other": 1
+    },
+    "Delta SkyMiles Reserve American Express": {
+      "Delta": 3,
       "Other": 1
     },
     "Delta SkyMiles Reserve Business American Express": {
@@ -855,6 +923,27 @@
     "Discover it Miles": {
       "Other": 1.5
     },
+    "Discover it Secured": {
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "quarterly",
+        "tiers": [
+          {
+            "key": "2pct",
+            "fallbackRate": 1,
+            "cap": 1000,
+            "uiLabel": "2% gas/dining",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.",
+            "categories": [
+              "Gas",
+              "Dining"
+            ]
+          }
+        ]
+      }
+    },
     "Discover it Student Cash Back": {
       "categories": {
         "Other": 1
@@ -973,29 +1062,127 @@
         ]
       }
     },
-    "Discover it Secured": {
-      "Gas": 2,
+    "Hilton Honors American Express": {
+      "Hilton": 7,
+      "Dining": 5,
+      "Groceries": 5,
+      "Gas": 5,
+      "Other": 3
+    },
+    "Hilton Honors American Express Aspire": {
+      "Hilton": 14,
+      "Flights": 7,
+      "Amex Travel": 7,
+      "Car Rentals": 7,
+      "Dining": 7,
+      "Other": 3
+    },
+    "Hilton Honors American Express Surpass": {
+      "Hilton": 12,
+      "Dining": 6,
+      "Groceries": 6,
+      "Gas": 6,
+      "Online Retail": 4,
+      "Other": 3
+    },
+    "IHG One Rewards Premier": {
+      "IHG": 10,
+      "Travel": 5,
+      "Dining": 5,
+      "Gas": 5,
+      "Other": 3
+    },
+    "JetBlue Card": {
+      "JetBlue": 3,
       "Dining": 2,
-      "Other": 1,
+      "Groceries": 2,
+      "Other": 1
+    },
+    "JetBlue Plus": {
+      "JetBlue": 6,
+      "Dining": 2,
+      "Groceries": 2,
+      "Other": 1
+    },
+    "Marriott Bonvoy Boundless": {
+      "Marriott": 6,
+      "Dining": 3,
+      "Gas": 3,
+      "Groceries": 3,
+      "Other": 2,
       "spendCaps": {
-        "capPeriod": "quarterly",
+        "capPeriod": "anniversary",
         "tiers": [
           {
-            "key": "2pct",
-            "fallbackRate": 1,
-            "cap": 1000,
-            "uiLabel": "2% gas/dining",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Discover's portal and edit the amount here.",
+            "key": "bonus",
+            "fallbackRate": 2,
+            "cap": 6000,
+            "uiLabel": "3x dining/gas/groceries",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
             "categories": [
+              "Dining",
               "Gas",
-              "Dining"
+              "Groceries"
             ]
           }
         ]
       }
     },
-    "U.S. Bank Smartly Visa Signature": {
+    "Marriott Bonvoy Brilliant": {
+      "Marriott": 6,
+      "Dining": 3,
+      "Flights": 3,
       "Other": 2
+    },
+    "Southwest Rapid Rewards Plus": {
+      "Southwest": 2,
+      "Gas": 2,
+      "Groceries": 2,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "anniversary",
+        "tiers": [
+          {
+            "key": "gas_grocery",
+            "fallbackRate": 1,
+            "cap": 5000,
+            "uiLabel": "2x gas/groceries",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
+            "categories": [
+              "Gas",
+              "Groceries"
+            ]
+          }
+        ]
+      }
+    },
+    "Southwest Rapid Rewards Premier": {
+      "Southwest": 3,
+      "Dining": 2,
+      "Groceries": 2,
+      "Other": 1,
+      "spendCaps": {
+        "capPeriod": "anniversary",
+        "tiers": [
+          {
+            "key": "dining_grocery",
+            "fallbackRate": 1,
+            "cap": 8000,
+            "uiLabel": "2x dining/groceries",
+            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
+            "categories": [
+              "Dining",
+              "Groceries"
+            ]
+          }
+        ]
+      }
+    },
+    "Southwest Rapid Rewards Priority": {
+      "Southwest": 4,
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1
     },
     "U.S. Bank Altitude Connect": {
       "US Bank Travel": 5,
@@ -1095,6 +1282,25 @@
         "luminarypodcasts.com",
         "nba.com"
       ]
+    },
+    "U.S. Bank Altitude Reserve": {
+      "US Bank Travel": 5,
+      "Travel": 3,
+      "Other": 1
+    },
+    "U.S. Bank Business Altitude Connect": {
+      "US Bank Travel": 5,
+      "Travel": 4,
+      "Gas": 4,
+      "EV Charging": 4,
+      "Dining": 2,
+      "Phone": 2,
+      "Other": 1
+    },
+    "U.S. Bank Business Altitude Power": {
+      "Top Category": 6,
+      "Other": 1.5,
+      "trackingNote": "Spend cap tracking isn't available — this card's bonus category is determined automatically by U.S. Bank based on your highest monthly spending."
     },
     "U.S. Bank Cash+": {
       "Top Category": 5,
@@ -1212,19 +1418,8 @@
         ]
       }
     },
-    "U.S. Bank Altitude Reserve": {
-      "US Bank Travel": 5,
-      "Travel": 3,
-      "Other": 1
-    },
-    "U.S. Bank Business Altitude Connect": {
-      "US Bank Travel": 5,
-      "Travel": 4,
-      "Gas": 4,
-      "EV Charging": 4,
-      "Dining": 2,
-      "Phone": 2,
-      "Other": 1
+    "U.S. Bank Smartly Visa Signature": {
+      "Other": 2
     },
     "U.S. Bank Triple Cash Rewards": {
       "US Bank Travel": 5,
@@ -1235,10 +1430,32 @@
       "Phone": 3,
       "Other": 1
     },
-    "U.S. Bank Business Altitude Power": {
-      "Top Category": 6,
-      "Other": 1.5,
-      "trackingNote": "Spend cap tracking isn't available \u2014 this card's bonus category is determined automatically by U.S. Bank based on your highest monthly spending."
+    "United Club Infinite": {
+      "United": 5,
+      "Travel": 2,
+      "Dining": 2,
+      "Other": 1
+    },
+    "United Explorer": {
+      "United": 3,
+      "Dining": 2,
+      "Hotels": 2,
+      "Other": 1
+    },
+    "United Quest": {
+      "United": 4,
+      "Travel": 2,
+      "Dining": 2,
+      "Streaming": 2,
+      "Other": 1,
+      "streamingDomains": [
+        "netflix.com",
+        "hulu.com",
+        "disneyplus.com",
+        "slingtv.com",
+        "spotify.com"
+      ],
+      "trackingNote": "2x on all other travel (hotels, flights, car rentals, transit) via the Travel category. Streaming limited to confirmed qualifying services: Netflix, Hulu, Disney+, Sling, and Spotify."
     },
     "Wells Fargo Active Cash": {
       "Other": 2
@@ -1273,11 +1490,17 @@
     },
     "Wells Fargo Signify Business Cash": {
       "Other": 2
+    },
+    "World of Hyatt": {
+      "Hyatt": 4,
+      "Dining": 2,
+      "Flights": 2,
+      "Transit": 2,
+      "Fitness": 2,
+      "Other": 1
     }
   },
-
   "merchantDatabase": {
-
     "amextravel.com": "Amex Travel",
     "cititravel.com": "Citi Travel",
     "cititravel.com/flights": "Citi Travel Flights",
@@ -1287,7 +1510,6 @@
     "travel.capitalone.com/flights": "Capital One Travel Select",
     "travel.capitalone.com/packages": "Capital One Travel Select",
     "travelsecure.chase.com": "Chase Travel",
-
     "ads.google.com": "Advertising",
     "ads.tiktok.com": "Advertising",
     "advertising.amazon.com": "Advertising",
@@ -1296,11 +1518,9 @@
     "facebook.com/ads": "Advertising",
     "googleads.google.com": "Advertising",
     "meta.com/ads": "Advertising",
-
     "amazon.ca": "Amazon",
     "amazon.co.uk": "Amazon",
     "amazon.com": "Amazon",
-
     "benefitcosmetics.com": "Beauty",
     "colourpop.com": "Beauty",
     "esteelauder.com": "Beauty",
@@ -1322,7 +1542,6 @@
     "toofaced.com": "Beauty",
     "ulta.com": "Beauty",
     "urbandecay.com": "Beauty",
-
     "aadvantagecars.com": "AAdvantage Cars",
     "alamo.com": "Car Rentals",
     "avis.com": "Car Rentals",
@@ -1335,7 +1554,6 @@
     "thrifty.com": "Car Rentals",
     "turo.com": "Car Rentals",
     "zipcar.com": "Car Rentals",
-
     "ae.com": "Clothing",
     "adidas.com": "Clothing",
     "aloyoga.com": "Clothing",
@@ -1356,7 +1574,6 @@
     "urbanoutfitters.com": "Clothing",
     "victoriassecret.com": "Clothing",
     "zara.com": "Clothing",
-
     "belk.com": "Department Stores",
     "bloomingdales.com": "Department Stores",
     "dillards.com": "Department Stores",
@@ -1366,7 +1583,6 @@
     "neimanmarcus.com": "Department Stores",
     "nordstrom.com": "Department Stores",
     "saksfifthavenue.com": "Department Stores",
-
     "applebees.com": "Dining",
     "baskinrobbins.com": "Dining",
     "benandjerrys.com": "Dining",
@@ -1394,14 +1610,12 @@
     "texasroadhouse.com": "Dining",
     "tock.com": "Dining",
     "ubereats.com": "Dining",
-
     "cvs.com": "Drugstores",
     "duanereade.com": "Drugstores",
     "kerrdrug.com": "Drugstores",
     "pharmacy.amazon.com": "Drugstores",
     "riteaid.com": "Drugstores",
     "walgreens.com": "Drugstores",
-
     "blink.com": "EV Charging",
     "chargepoint.com": "EV Charging",
     "electrifyamerica.com": "EV Charging",
@@ -1409,13 +1623,11 @@
     "flo.com": "EV Charging",
     "plugshare.com": "EV Charging",
     "shellrecharge.com": "EV Charging",
-
     "adorama.com": "Electronics",
     "bestbuy.com": "Electronics",
     "bhphotovideo.com": "Electronics",
     "microcenter.com": "Electronics",
     "newegg.com": "Electronics",
-
     "amf.com": "Entertainment",
     "axs.com": "Entertainment",
     "bowlero.com": "Entertainment",
@@ -1451,7 +1663,6 @@
     "universalstudios.com": "Entertainment",
     "urbanair.com": "Entertainment",
     "vividseats.com": "Entertainment",
-
     "arbys.com": "Fast Food",
     "bojangles.com": "Fast Food",
     "cariboucoffee.com": "Fast Food",
@@ -1520,7 +1731,6 @@
     "whataburger.com": "Fast Food",
     "wingstop.com": "Fast Food",
     "zaxbys.com": "Fast Food",
-
     "24hourfitness.com": "Fitness",
     "anytimefitness.com": "Fitness",
     "classpass.com": "Fitness",
@@ -1531,12 +1741,11 @@
     "onepeloton.com": "Fitness",
     "orangetheory.com": "Fitness",
     "planetfitness.com": "Fitness",
-
     "aa.com": "American Airlines",
     "aeromexico.com": "Flights",
     "aircanada.com": "Flights",
     "airfrance.com": "Flights",
-    "alaskaair.com": "Flights",
+    "alaskaair.com": "Alaska Airlines",
     "allegiantair.com": "Flights",
     "ana.co.jp": "Flights",
     "avianca.com": "Flights",
@@ -1547,21 +1756,20 @@
     "flydubai.com": "Flights",
     "flyfrontier.com": "Flights",
     "frontierairlines.com": "Flights",
-    "hawaiianairlines.com": "Flights",
-    "jetblue.com": "Flights",
+    "hawaiianairlines.com": "Alaska Airlines",
+    "jetblue.com": "JetBlue",
     "klm.com": "Flights",
     "latamairlines.com": "Flights",
     "lufthansa.com": "Flights",
     "qatarairways.com": "Flights",
     "ryanair.com": "Flights",
     "singaporeair.com": "Flights",
-    "southwest.com": "Flights",
+    "southwest.com": "Southwest",
     "spirit.com": "Flights",
     "sunwing.ca": "Flights",
     "turkishairlines.com": "Flights",
-    "united.com": "Flights",
+    "united.com": "United",
     "virginatlantic.com": "Flights",
-
     "article.com": "Furniture",
     "ashleyfurniture.com": "Furniture",
     "cb2.com": "Furniture",
@@ -1573,7 +1781,6 @@
     "wayfair.com": "Furniture",
     "westelm.com": "Furniture",
     "williams-sonoma.com": "Furniture",
-
     "acmemarkets.com": "Groceries",
     "albertsons.com": "Groceries",
     "aldi.com": "Groceries",
@@ -1615,7 +1822,6 @@
     "wholefoodsmarket.com": "Groceries",
     "winco.com": "Groceries",
     "winfood.com": "Groceries",
-
     "acehardware.com": "Home Improvement",
     "benjaminmoore.com": "Home Improvement",
     "build.com": "Home Improvement",
@@ -1632,61 +1838,58 @@
     "sherwin-williams.com": "Home Improvement",
     "toolstation.com": "Home Improvement",
     "truevalue.com": "Home Improvement",
-
     "aadvantagehotels.com": "AAdvantage Hotels",
-    "ac-hotels.com": "Hotels",
-    "alofthotels.com": "Hotels",
-    "andazhotels.com": "Hotels",
-    "autograph-hotels.com": "Hotels",
-    "avid-hotels.com": "Hotels",
+    "ac-hotels.com": "Marriott",
+    "alofthotels.com": "Marriott",
+    "andazhotels.com": "Hyatt",
+    "autograph-hotels.com": "Marriott",
+    "avid-hotels.com": "IHG",
     "bestwestern.com": "Hotels",
-    "candlewoodsuites.com": "Hotels",
+    "candlewoodsuites.com": "IHG",
     "choicehotels.com": "Hotels",
-    "conradhotels.com": "Hotels",
-    "courtyardmarriott.com": "Hotels",
-    "crowneplaza.com": "Hotels",
-    "curiocollection.com": "Hotels",
-    "daysinn.com": "Hotels",
-    "doubletree.com": "Hotels",
-    "doubletreehilton.com": "Hotels",
-    "elementhotels.com": "Hotels",
-    "fairfieldinn.com": "Hotels",
+    "conradhotels.com": "Hilton",
+    "courtyardmarriott.com": "Marriott",
+    "crowneplaza.com": "IHG",
+    "curiocollection.com": "Hilton",
+    "daysinn.com": "Wyndham",
+    "doubletree.com": "Hilton",
+    "doubletreehilton.com": "Hilton",
+    "elementhotels.com": "Marriott",
+    "fairfieldinn.com": "Marriott",
     "fourseasons.com": "Hotels",
-    "grandhyatt.com": "Hotels",
-    "hamptoninn.com": "Hotels",
-    "hilton.com": "Hotels",
-    "hiltonhotels.com": "Hotels",
-    "holidayinn.com": "Hotels",
-    "hotelindigo.com": "Hotels",
-    "hyatt.com": "Hotels",
-    "hyattplace.com": "Hotels",
-    "hyattregency.com": "Hotels",
-    "ihg.com": "Hotels",
-    "interconti.com": "Hotels",
-    "kimptonhotels.com": "Hotels",
-    "lemeridien.com": "Hotels",
-    "marriott.com": "Hotels",
+    "grandhyatt.com": "Hyatt",
+    "hamptoninn.com": "Hilton",
+    "hilton.com": "Hilton",
+    "hiltonhotels.com": "Hilton",
+    "holidayinn.com": "IHG",
+    "hotelindigo.com": "IHG",
+    "hyatt.com": "Hyatt",
+    "hyattplace.com": "Hyatt",
+    "hyattregency.com": "Hyatt",
+    "ihg.com": "IHG",
+    "interconti.com": "IHG",
+    "kimptonhotels.com": "IHG",
+    "lemeridien.com": "Marriott",
+    "marriott.com": "Marriott",
     "motel6.com": "Hotels",
-    "moxy-hotels.com": "Hotels",
-    "mrsmith.com": "Hotels",
-    "parkhyatt.com": "Hotels",
+    "moxy-hotels.com": "Marriott",
+    "parkhyatt.com": "Hyatt",
     "radissonhotels.com": "Hotels",
-    "residenceinn.com": "Hotels",
-    "ritz-carlton.com": "Hotels",
-    "sheraton.com": "Hotels",
-    "sixsenses.com": "Hotels",
-    "springhillsuites.com": "Hotels",
-    "starwoodhotels.com": "Hotels",
-    "staybridge.com": "Hotels",
-    "stregis.com": "Hotels",
-    "super8.com": "Hotels",
-    "tapestrycollection.com": "Hotels",
-    "thompsonhotels.com": "Hotels",
-    "waldorfastoria.com": "Hotels",
-    "westin.com": "Hotels",
-    "whotels.com": "Hotels",
-    "wyndhamhotels.com": "Hotels",
-
+    "residenceinn.com": "Marriott",
+    "ritz-carlton.com": "Marriott",
+    "sheraton.com": "Marriott",
+    "sixsenses.com": "IHG",
+    "springhillsuites.com": "Marriott",
+    "starwoodhotels.com": "Marriott",
+    "staybridge.com": "IHG",
+    "stregis.com": "Marriott",
+    "super8.com": "Wyndham",
+    "tapestrycollection.com": "Hilton",
+    "thompsonhotels.com": "Hyatt",
+    "waldorfastoria.com": "Hilton",
+    "westin.com": "Marriott",
+    "whotels.com": "Marriott",
+    "wyndhamhotels.com": "Wyndham",
     "altafiber.com": "Internet",
     "astound.com": "Internet",
     "att.com": "Internet",
@@ -1716,7 +1919,6 @@
     "wowway.com": "Internet",
     "xfinity.com": "Internet",
     "ziplyfiber.com": "Internet",
-
     "amctheatres.com": "Movies",
     "atomtickets.com": "Movies",
     "bbtheatres.com": "Movies",
@@ -1734,11 +1936,9 @@
     "regmovies.com": "Movies",
     "showcasecinemas.com": "Movies",
     "studiomoviegrill.com": "Movies",
-
     "officedepot.com": "Office Supplies",
     "officemax.com": "Office Supplies",
     "staples.com": "Office Supplies",
-
     "advanceautoparts.com": "Other",
     "apple.com": "Other",
     "autozone.com": "Other",
@@ -1775,7 +1975,6 @@
     "walmart.com": "Other",
     "wish.com": "Other",
     "wix.com": "Other",
-
     "1800petmeds.com": "Pet Supplies",
     "barkbox.com": "Pet Supplies",
     "chewy.com": "Pet Supplies",
@@ -1785,7 +1984,6 @@
     "petplate.com": "Pet Supplies",
     "petsmart.com": "Pet Supplies",
     "vetsource.com": "Pet Supplies",
-
     "boost.com": "Phone",
     "boostmobile.com": "Phone",
     "consumer.att.com": "Phone",
@@ -1795,7 +1993,6 @@
     "uscellular.com": "Phone",
     "verizonwireless.com": "Phone",
     "wireless.att.com": "Phone",
-
     "dhl.com": "Shipping",
     "fedex.com": "Shipping",
     "pitneyshipper.com": "Shipping",
@@ -1803,7 +2000,6 @@
     "stamps.com": "Shipping",
     "ups.com": "Shipping",
     "usps.com": "Shipping",
-
     "academy.com": "Sporting Goods",
     "backcountry.com": "Sporting Goods",
     "basspro.com": "Sporting Goods",
@@ -1815,7 +2011,6 @@
     "rei.com": "Sporting Goods",
     "salomon.com": "Sporting Goods",
     "swimoutlet.com": "Sporting Goods",
-
     "acorn.tv": "Streaming",
     "amcplus.com": "Streaming",
     "athome.fandango.com": "Streaming",
@@ -1858,13 +2053,11 @@
     "tubitv.com": "Streaming",
     "tv.apple.com": "Streaming",
     "youtube.com": "Streaming",
-
     "flixbus.com": "Transit",
     "greyhound.com": "Transit",
     "lyft.com": "Transit",
     "megabus.com": "Transit",
     "uber.com": "Transit",
-
     "amtrak.com": "Travel",
     "booking.com": "Travel",
     "carnival.com": "Travel",
@@ -1886,16 +2079,14 @@
     "travelocity.com": "Travel",
     "tripadvisor.com": "Travel",
     "viator.com": "Travel",
-
     "airbnb.com": "Vacation Rentals",
     "homestay.com": "Vacation Rentals",
     "plumguide.com": "Vacation Rentals",
     "vacasa.com": "Vacation Rentals",
     "vrbo.com": "Vacation Rentals",
-
     "bjs.com": "Wholesale Clubs",
     "costco.com": "Wholesale Clubs",
-    "samsclub.com": "Wholesale Clubs"
-
+    "samsclub.com": "Wholesale Clubs",
+    "mrandmrssmith.com": "Hotels"
   }
 }
