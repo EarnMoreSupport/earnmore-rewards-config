@@ -1733,6 +1733,7 @@
     "broadway.com": "Entertainment",
     "buschgardens.com": "Entertainment",
     "cedarpoint.com": "Entertainment",
+    "circuitcat.com": "Entertainment",
     "daveandbusters.com": "Entertainment",
     "dollywood.com": "Entertainment",
     "driveshack.com": "Entertainment",
@@ -2916,7 +2917,8 @@
     "chronogolf.com",
     "eventbrite.com",
     "hisawyer.com",
-    "amilia.com"
+    "amilia.com",
+    "oneboxtds.com"
   ],
   "paymentIframeDomains": [
     "js.stripe.com",
