@@ -3,8 +3,526 @@
     "last_verified": "2026-07",
     "notes": "Rewards rates subject to change. Always confirm on issuer website before applying. Portal rates (e.g. Chase Travel, Amex Travel, Capital One Travel) only apply when booking through that issuer's portal. Categories earning at the same rate as Other are omitted."
   },
+  "ONLINE_RETAIL_CATEGORIES": {
+    "Amazon": true,
+    "Auto Parts": true,
+    "Beauty": true,
+    "Clothing": true,
+    "Department Stores": true,
+    "Discount Stores": true,
+    "Electronics": true,
+    "Furniture": true,
+    "Home Improvement": true,
+    "Office Supplies": true,
+    "Online Marketplaces": true,
+    "Pet Supplies": true,
+    "Sporting Goods": true,
+    "Superstores": true,
+    "Wholesale Clubs": true
+  },
+  "ONLINE_SHOPPING_CATEGORIES": {
+    "Amazon": true,
+    "Auto Parts": true,
+    "Beauty": true,
+    "Clothing": true,
+    "Department Stores": true,
+    "Discount Stores": true,
+    "Electronics": true,
+    "Furniture": true,
+    "Home Improvement": true,
+    "Internet": true,
+    "Office Supplies": true,
+    "Online Marketplaces": true,
+    "Pet Supplies": true,
+    "Phone": true,
+    "Sporting Goods": true,
+    "Streaming": true,
+    "Superstores": true,
+    "Wholesale Clubs": true
+  },
+  "GOOGLE_TYPE_CATEGORY_MAP": {
+    "academic_department": "Other",
+    "acai_shop": "Dining",
+    "accounting": "Other",
+    "administrative_area_level_1": "Other",
+    "administrative_area_level_2": "Other",
+    "adventure_sports_center": "Entertainment",
+    "afghani_restaurant": "Dining",
+    "african_restaurant": "Dining",
+    "aircraft_rental_service": "Other",
+    "airport": "Flights",
+    "airstrip": "Flights",
+    "american_restaurant": "Dining",
+    "amphitheatre": "Entertainment",
+    "amusement_center": "Entertainment",
+    "amusement_park": "Entertainment",
+    "apartment_building": "Other",
+    "apartment_complex": "Other",
+    "aquarium": "Entertainment",
+    "arena": "Entertainment",
+    "argentinian_restaurant": "Dining",
+    "art_gallery": "Entertainment",
+    "art_museum": "Entertainment",
+    "art_studio": "Other",
+    "asian_fusion_restaurant": "Dining",
+    "asian_grocery_store": "Groceries",
+    "asian_restaurant": "Dining",
+    "association_or_organization": "Other",
+    "astrologer": "Other",
+    "athletic_field": "Other",
+    "atm": "Other",
+    "auditorium": "Entertainment",
+    "australian_restaurant": "Dining",
+    "austrian_restaurant": "Dining",
+    "auto_parts_store": "Auto Parts",
+    "bagel_shop": "Dining",
+    "bakery": "Dining",
+    "bangladeshi_restaurant": "Dining",
+    "bank": "Other",
+    "banquet_hall": "Other",
+    "bar": "Dining",
+    "bar_and_grill": "Dining",
+    "barbecue_area": "Other",
+    "barbecue_restaurant": "Dining",
+    "barber_shop": "Beauty",
+    "basque_restaurant": "Dining",
+    "bavarian_restaurant": "Dining",
+    "beach": "Other",
+    "beautician": "Beauty",
+    "beauty_salon": "Beauty",
+    "bed_and_breakfast": "Hotels",
+    "beer_garden": "Dining",
+    "belgian_restaurant": "Dining",
+    "bicycle_store": "Sporting Goods",
+    "bike_sharing_station": "Transit",
+    "bistro": "Dining",
+    "body_art_service": "Other",
+    "book_store": "Other",
+    "botanical_garden": "Entertainment",
+    "bowling_alley": "Entertainment",
+    "brazilian_restaurant": "Dining",
+    "breakfast_restaurant": "Dining",
+    "brewery": "Dining",
+    "brewpub": "Dining",
+    "bridge": "Other",
+    "british_restaurant": "Dining",
+    "brunch_restaurant": "Dining",
+    "buddhist_temple": "Other",
+    "budget_japanese_inn": "Hotels",
+    "buffet_restaurant": "Dining",
+    "building_materials_store": "Home Improvement",
+    "burmese_restaurant": "Dining",
+    "burrito_restaurant": "Dining",
+    "bus_station": "Transit",
+    "bus_stop": "Transit",
+    "business_center": "Other",
+    "butcher_shop": "Groceries",
+    "cafe": "Dining",
+    "cafeteria": "Dining",
+    "cajun_restaurant": "Dining",
+    "cake_shop": "Dining",
+    "californian_restaurant": "Dining",
+    "cambodian_restaurant": "Dining",
+    "campground": "Vacation Rentals",
+    "camping_cabin": "Vacation Rentals",
+    "candy_store": "Dining",
+    "cantonese_restaurant": "Dining",
+    "car_dealer": "Other",
+    "car_rental": "Car Rentals",
+    "car_repair": "Other",
+    "car_wash": "Other",
+    "caribbean_restaurant": "Dining",
+    "casino": "Entertainment",
+    "castle": "Entertainment",
+    "cat_cafe": "Dining",
+    "catering_service": "Other",
+    "cell_phone_store": "Electronics",
+    "cemetery": "Other",
+    "chauffeur_service": "Other",
+    "chicken_restaurant": "Fast Food",
+    "chicken_wings_restaurant": "Fast Food",
+    "child_care_agency": "Other",
+    "childrens_camp": "Other",
+    "chilean_restaurant": "Dining",
+    "chinese_noodle_restaurant": "Dining",
+    "chinese_restaurant": "Dining",
+    "chiropractor": "Other",
+    "chocolate_factory": "Dining",
+    "chocolate_shop": "Dining",
+    "church": "Other",
+    "city_hall": "Other",
+    "city_park": "Other",
+    "clothing_store": "Clothing",
+    "cocktail_bar": "Dining",
+    "coffee_roastery": "Dining",
+    "coffee_shop": "Dining",
+    "coffee_stand": "Dining",
+    "colombian_restaurant": "Dining",
+    "comedy_club": "Entertainment",
+    "community_center": "Other",
+    "concert_hall": "Entertainment",
+    "condominium_complex": "Other",
+    "confectionery": "Dining",
+    "consultant": "Other",
+    "convenience_store": "Other",
+    "convention_center": "Other",
+    "corporate_office": "Other",
+    "cosmetics_store": "Beauty",
+    "cottage": "Vacation Rentals",
+    "country": "Other",
+    "courier_service": "Shipping",
+    "courthouse": "Other",
+    "coworking_space": "Other",
+    "croatian_restaurant": "Dining",
+    "cuban_restaurant": "Dining",
+    "cultural_center": "Entertainment",
+    "cultural_landmark": "Entertainment",
+    "cycling_park": "Other",
+    "czech_restaurant": "Dining",
+    "dance_hall": "Entertainment",
+    "danish_restaurant": "Dining",
+    "deli": "Dining",
+    "dental_clinic": "Other",
+    "dentist": "Other",
+    "department_store": "Department Stores",
+    "dessert_restaurant": "Dining",
+    "dessert_shop": "Dining",
+    "dim_sum_restaurant": "Dining",
+    "diner": "Dining",
+    "discount_store": "Discount Stores",
+    "discount_supermarket": "Groceries",
+    "doctor": "Other",
+    "dog_cafe": "Dining",
+    "dog_park": "Other",
+    "donut_shop": "Dining",
+    "drugstore": "Drugstores",
+    "dumpling_restaurant": "Dining",
+    "dutch_restaurant": "Dining",
+    "eastern_european_restaurant": "Dining",
+    "ebike_charging_station": "EV Charging",
+    "educational_institution": "Other",
+    "electric_vehicle_charging_station": "EV Charging",
+    "electrician": "Other",
+    "electronics_store": "Electronics",
+    "embassy": "Other",
+    "employment_agency": "Other",
+    "ethiopian_restaurant": "Dining",
+    "european_restaurant": "Dining",
+    "event_venue": "Other",
+    "extended_stay_hotel": "Hotels",
+    "falafel_restaurant": "Dining",
+    "family_restaurant": "Dining",
+    "farm": "Other",
+    "farmers_market": "Groceries",
+    "farmstay": "Vacation Rentals",
+    "fast_food_restaurant": "Fast Food",
+    "ferris_wheel": "Entertainment",
+    "ferry_service": "Transit",
+    "ferry_terminal": "Transit",
+    "filipino_restaurant": "Dining",
+    "fine_dining_restaurant": "Dining",
+    "fire_station": "Other",
+    "fish_and_chips_restaurant": "Dining",
+    "fishing_charter": "Other",
+    "fishing_pier": "Other",
+    "fishing_pond": "Other",
+    "fitness_center": "Fitness",
+    "flea_market": "Other",
+    "florist": "Other",
+    "fondue_restaurant": "Dining",
+    "food_court": "Dining",
+    "food_delivery": "Other",
+    "food_store": "Groceries",
+    "foot_care": "Other",
+    "fountain": "Other",
+    "french_restaurant": "Dining",
+    "funeral_home": "Other",
+    "furniture_store": "Furniture",
+    "fusion_restaurant": "Dining",
+    "garden": "Other",
+    "garden_center": "Home Improvement",
+    "gas_station": "Gas",
+    "gastropub": "Dining",
+    "general_hospital": "Other",
+    "general_store": "Other",
+    "german_restaurant": "Dining",
+    "gift_shop": "Other",
+    "go_karting_venue": "Entertainment",
+    "golf_course": "Entertainment",
+    "government_office": "Other",
+    "greek_restaurant": "Dining",
+    "grocery_store": "Groceries",
+    "guest_house": "Vacation Rentals",
+    "gym": "Fitness",
+    "gyro_restaurant": "Dining",
+    "hair_care": "Beauty",
+    "hair_salon": "Beauty",
+    "halal_restaurant": "Dining",
+    "hamburger_restaurant": "Fast Food",
+    "hardware_store": "Home Improvement",
+    "hawaiian_restaurant": "Dining",
+    "health_food_store": "Groceries",
+    "heliport": "Other",
+    "hiking_area": "Other",
+    "hindu_temple": "Other",
+    "historical_landmark": "Entertainment",
+    "historical_place": "Entertainment",
+    "history_museum": "Entertainment",
+    "home_goods_store": "Furniture",
+    "home_improvement_store": "Home Improvement",
+    "hookah_bar": "Dining",
+    "hospital": "Other",
+    "hostel": "Hotels",
+    "hot_dog_restaurant": "Fast Food",
+    "hot_dog_stand": "Fast Food",
+    "hot_pot_restaurant": "Dining",
+    "hotel": "Hotels",
+    "housing_complex": "Other",
+    "hungarian_restaurant": "Dining",
+    "hypermarket": "Groceries",
+    "ice_cream_shop": "Dining",
+    "ice_skating_rink": "Entertainment",
+    "indian_restaurant": "Dining",
+    "indonesian_restaurant": "Dining",
+    "indoor_golf_course": "Entertainment",
+    "indoor_playground": "Other",
+    "inn": "Hotels",
+    "insurance_agency": "Other",
+    "international_airport": "Flights",
+    "internet_cafe": "Other",
+    "irish_pub": "Dining",
+    "irish_restaurant": "Dining",
+    "island": "Other",
+    "israeli_restaurant": "Dining",
+    "italian_restaurant": "Dining",
+    "japanese_curry_restaurant": "Dining",
+    "japanese_inn": "Hotels",
+    "japanese_izakaya_restaurant": "Dining",
+    "japanese_restaurant": "Dining",
+    "jewelry_store": "Other",
+    "juice_shop": "Dining",
+    "karaoke": "Entertainment",
+    "kebab_shop": "Dining",
+    "korean_barbecue_restaurant": "Dining",
+    "korean_restaurant": "Dining",
+    "lake": "Other",
+    "latin_american_restaurant": "Dining",
+    "laundry": "Other",
+    "lawyer": "Other",
+    "lebanese_restaurant": "Dining",
+    "library": "Other",
+    "light_rail_station": "Transit",
+    "liquor_store": "Other",
+    "live_music_venue": "Entertainment",
+    "local_government_office": "Other",
+    "locality": "Other",
+    "locksmith": "Other",
+    "lodging": "Hotels",
+    "lounge_bar": "Dining",
+    "makeup_artist": "Beauty",
+    "malaysian_restaurant": "Dining",
+    "manufacturer": "Other",
+    "marina": "Other",
+    "market": "Other",
+    "marketing_consultant": "Other",
+    "massage": "Other",
+    "massage_spa": "Beauty",
+    "meal_delivery": "Fast Food",
+    "meal_takeaway": "Fast Food",
+    "medical_center": "Other",
+    "medical_clinic": "Other",
+    "medical_lab": "Other",
+    "mediterranean_restaurant": "Dining",
+    "mexican_restaurant": "Dining",
+    "middle_eastern_restaurant": "Dining",
+    "miniature_golf_course": "Entertainment",
+    "mobile_home_park": "Vacation Rentals",
+    "mongolian_barbecue_restaurant": "Dining",
+    "monument": "Entertainment",
+    "moroccan_restaurant": "Dining",
+    "mosque": "Other",
+    "motel": "Hotels",
+    "mountain_peak": "Other",
+    "movie_rental": "Movies",
+    "movie_theater": "Movies",
+    "moving_company": "Other",
+    "museum": "Entertainment",
+    "nail_salon": "Beauty",
+    "national_park": "Other",
+    "nature_preserve": "Other",
+    "neighborhood_police_station": "Other",
+    "night_club": "Entertainment",
+    "non_profit_organization": "Other",
+    "noodle_shop": "Dining",
+    "north_indian_restaurant": "Dining",
+    "observation_deck": "Entertainment",
+    "off_roading_area": "Other",
+    "opera_house": "Entertainment",
+    "oyster_bar_restaurant": "Dining",
+    "paintball_center": "Entertainment",
+    "painter": "Other",
+    "pakistani_restaurant": "Dining",
+    "park": "Other",
+    "park_and_ride": "Transit",
+    "parking": "Other",
+    "parking_garage": "Other",
+    "parking_lot": "Other",
+    "pastry_shop": "Dining",
+    "performing_arts_theater": "Entertainment",
+    "persian_restaurant": "Dining",
+    "peruvian_restaurant": "Dining",
+    "pet_boarding_service": "Other",
+    "pet_care": "Other",
+    "pet_store": "Pet Supplies",
+    "pharmacy": "Drugstores",
+    "philharmonic_hall": "Entertainment",
+    "physiotherapist": "Other",
+    "picnic_ground": "Other",
+    "pizza_delivery": "Fast Food",
+    "pizza_restaurant": "Dining",
+    "planetarium": "Entertainment",
+    "playground": "Other",
+    "plaza": "Other",
+    "plumber": "Other",
+    "police": "Other",
+    "polish_restaurant": "Dining",
+    "portuguese_restaurant": "Dining",
+    "post_office": "Shipping",
+    "postal_code": "Other",
+    "preschool": "Other",
+    "primary_school": "Other",
+    "private_guest_room": "Vacation Rentals",
+    "psychic": "Other",
+    "pub": "Dining",
+    "public_bath": "Other",
+    "public_bathroom": "Other",
+    "race_course": "Entertainment",
+    "ramen_restaurant": "Dining",
+    "ranch": "Other",
+    "real_estate_agency": "Other",
+    "research_institute": "Other",
+    "resort_hotel": "Hotels",
+    "rest_stop": "Other",
+    "restaurant": "Dining",
+    "river": "Other",
+    "roller_coaster": "Entertainment",
+    "romanian_restaurant": "Dining",
+    "roofing_contractor": "Other",
+    "russian_restaurant": "Dining",
+    "rv_park": "Vacation Rentals",
+    "salad_shop": "Dining",
+    "sandwich_shop": "Dining",
+    "sauna": "Other",
+    "scandinavian_restaurant": "Dining",
+    "scenic_spot": "Other",
+    "school": "Other",
+    "school_district": "Other",
+    "sculpture": "Other",
+    "seafood_restaurant": "Dining",
+    "secondary_school": "Other",
+    "service": "Other",
+    "shawarma_restaurant": "Dining",
+    "shinto_shrine": "Other",
+    "shipping_service": "Shipping",
+    "shoe_store": "Clothing",
+    "shopping_mall": "Other",
+    "skateboard_park": "Other",
+    "ski_resort": "Entertainment",
+    "skin_care_clinic": "Beauty",
+    "snack_bar": "Fast Food",
+    "soul_food_restaurant": "Dining",
+    "soup_restaurant": "Dining",
+    "south_american_restaurant": "Dining",
+    "south_indian_restaurant": "Dining",
+    "southwestern_us_restaurant": "Dining",
+    "spa": "Beauty",
+    "spanish_restaurant": "Dining",
+    "sporting_goods_store": "Sporting Goods",
+    "sports_activity_location": "Other",
+    "sports_bar": "Dining",
+    "sports_club": "Fitness",
+    "sports_coaching": "Other",
+    "sports_complex": "Entertainment",
+    "sports_school": "Other",
+    "sportswear_store": "Clothing",
+    "sri_lankan_restaurant": "Dining",
+    "stable": "Other",
+    "stadium": "Entertainment",
+    "state_park": "Other",
+    "steak_house": "Dining",
+    "storage": "Other",
+    "store": "Other",
+    "subway_station": "Transit",
+    "summer_camp_organizer": "Other",
+    "supermarket": "Groceries",
+    "supplier": "Other",
+    "sushi_restaurant": "Dining",
+    "swimming_pool": "Other",
+    "swiss_restaurant": "Dining",
+    "synagogue": "Other",
+    "taco_restaurant": "Dining",
+    "tailor": "Other",
+    "taiwanese_restaurant": "Dining",
+    "tanning_studio": "Other",
+    "tapas_restaurant": "Dining",
+    "taxi_service": "Transit",
+    "taxi_stand": "Transit",
+    "tea_house": "Dining",
+    "tea_store": "Groceries",
+    "telecommunications_service_provider": "Other",
+    "television_studio": "Other",
+    "tennis_court": "Other",
+    "tex_mex_restaurant": "Dining",
+    "thai_restaurant": "Dining",
+    "thrift_store": "Clothing",
+    "tibetan_restaurant": "Dining",
+    "tire_shop": "Other",
+    "toll_station": "Transit",
+    "tonkatsu_restaurant": "Dining",
+    "tour_agency": "Travel",
+    "tourist_attraction": "Entertainment",
+    "tourist_information_center": "Other",
+    "toy_store": "Other",
+    "train_station": "Transit",
+    "train_ticket_office": "Transit",
+    "tram_stop": "Transit",
+    "transit_depot": "Transit",
+    "transit_station": "Transit",
+    "transit_stop": "Transit",
+    "transportation_service": "Transit",
+    "travel_agency": "Travel",
+    "truck_dealer": "Other",
+    "truck_stop": "Gas",
+    "turkish_restaurant": "Dining",
+    "ukrainian_restaurant": "Dining",
+    "university": "Other",
+    "vegan_restaurant": "Dining",
+    "vegetarian_restaurant": "Dining",
+    "veterinary_care": "Other",
+    "video_arcade": "Entertainment",
+    "vietnamese_restaurant": "Dining",
+    "vineyard": "Other",
+    "visitor_center": "Other",
+    "warehouse_store": "Wholesale Clubs",
+    "water_park": "Entertainment",
+    "wedding_venue": "Other",
+    "wellness_center": "Other",
+    "western_restaurant": "Dining",
+    "wholesaler": "Wholesale Clubs",
+    "wildlife_park": "Entertainment",
+    "wildlife_refuge": "Other",
+    "wine_bar": "Dining",
+    "winery": "Other",
+    "womens_clothing_store": "Clothing",
+    "woods": "Other",
+    "yakiniku_restaurant": "Dining",
+    "yakitori_restaurant": "Dining",
+    "yoga_studio": "Fitness",
+    "zoo": "Entertainment"
+  },
   "cardsDatabase": {
     "Alaska Airlines Visa Signature": {
+      "cardType": "Airline",
       "Alaska Airlines": 3,
       "Gas": 2,
       "EV Charging": 2,
@@ -15,6 +533,7 @@
       "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines')."
     },
     "Amazon Prime Visa": {
+      "cardType": "Bank",
       "Amazon": 5,
       "Whole Foods": 5,
       "Chase Travel": 5,
@@ -24,6 +543,7 @@
       "Other": 1
     },
     "Amazon Visa": {
+      "cardType": "Bank",
       "Amazon": 3,
       "Whole Foods": 3,
       "Chase Travel": 3,
@@ -33,6 +553,7 @@
       "Other": 1
     },
     "American Express Blue Business Plus": {
+      "cardType": "Bank",
       "Other": 2,
       "spendCaps": {
         "capPeriod": "annual",
@@ -49,6 +570,7 @@
       }
     },
     "American Express Blue Cash Everyday": {
+      "cardType": "Bank",
       "Groceries": 3,
       "Online Retail": 3,
       "Gas": 3,
@@ -90,6 +612,7 @@
       }
     },
     "American Express Blue Cash Preferred": {
+      "cardType": "Bank",
       "Groceries": 6,
       "Streaming": 6,
       "Gas": 3,
@@ -143,15 +666,18 @@
       ]
     },
     "American Express Business Gold": {
+      "cardType": "Bank",
       "Top Category": 4,
       "Other": 1,
-      "trackingNote": "Spend cap tracking isn't available — this card's bonus categories are determined automatically by Amex based on your highest monthly spending."
+      "trackingNote": "Spend cap tracking isn't available \u2014 this card's bonus categories are determined automatically by Amex based on your highest monthly spending."
     },
     "American Express Business Platinum": {
+      "cardType": "Bank",
       "Amex Travel": 5,
       "Other": 1
     },
     "American Express Gold": {
+      "cardType": "Bank",
       "Dining": 4,
       "Groceries": 4,
       "Flights": 3,
@@ -173,17 +699,20 @@
       }
     },
     "American Express Green": {
+      "cardType": "Bank",
       "Travel": 3,
       "Transit": 3,
       "Dining": 3,
       "Other": 1
     },
     "American Express Platinum": {
+      "cardType": "Bank",
       "Flights": 5,
       "Amex Travel": 5,
       "Other": 1
     },
     "Apple Card": {
+      "cardType": "Bank",
       "Apple Pay Partners": 3,
       "Apple Pay": 2,
       "Other": 1,
@@ -203,6 +732,7 @@
       ]
     },
     "Bank of America Business Advantage Customized Cash Rewards": {
+      "cardType": "Bank",
       "Choice Category": 3,
       "Dining": 2,
       "Other": 1,
@@ -259,12 +789,15 @@
       }
     },
     "Bank of America Business Advantage Travel Rewards": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Bank of America Business Advantage Unlimited Cash Rewards": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Bank of America Customized Cash Rewards": {
+      "cardType": "Bank",
       "Choice Category": 3,
       "Groceries": 2,
       "Wholesale Clubs": 2,
@@ -344,27 +877,33 @@
       }
     },
     "Bank of America Premium Rewards": {
+      "cardType": "Bank",
       "Travel": 2,
       "Dining": 2,
       "Other": 1.5
     },
     "Bank of America Premium Rewards Elite": {
+      "cardType": "Bank",
       "Travel": 2,
       "Dining": 2,
       "Other": 1.5
     },
     "Bank of America Travel Rewards": {
+      "cardType": "Bank",
       "BofA Travel": 3,
       "Other": 1.5
     },
     "Bank of America Unlimited Cash Rewards": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Bilt Blue": {
+      "cardType": "Bank",
       "Other": 1,
       "trackingNote": "Portal / Partner Rates are not tracked."
     },
     "Bilt Obsidian": {
+      "cardType": "Bank",
       "Choice Category": 3,
       "Travel": 2,
       "Other": 1,
@@ -398,18 +937,22 @@
       }
     },
     "Bilt Palladium": {
+      "cardType": "Bank",
       "Other": 2,
       "trackingNote": "Portal / Partner Rates are not tracked."
     },
     "Capital One Quicksilver": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 1.5
     },
     "Capital One QuicksilverOne": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 1.5
     },
     "Capital One Savor": {
+      "cardType": "Bank",
       "Capital One Entertainment": 8,
       "Capital One Travel": 5,
       "Dining": 3,
@@ -419,32 +962,39 @@
       "Other": 1
     },
     "Capital One Spark Cash Plus": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 2
     },
     "Capital One Spark Miles": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 2
     },
     "Capital One Venture": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 2
     },
     "Capital One Venture X": {
+      "cardType": "Bank",
       "Capital One Travel": 10,
       "Capital One Travel Select": 5,
       "Other": 2
     },
     "Capital One Venture X Business": {
+      "cardType": "Bank",
       "Capital One Travel": 10,
       "Capital One Travel Select": 5,
       "Other": 2
     },
     "Capital One VentureOne": {
+      "cardType": "Bank",
       "Capital One Travel": 5,
       "Other": 1.25
     },
     "Chase Freedom Flex": {
+      "cardType": "Bank",
       "categories": {
         "Chase Travel": 5,
         "Dining": 3,
@@ -590,15 +1140,18 @@
       }
     },
     "Chase Freedom Rise": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Chase Freedom Unlimited": {
+      "cardType": "Bank",
       "Chase Travel": 5,
       "Dining": 3,
       "Drugstores": 3,
       "Other": 1.5
     },
     "Chase Ink Business Cash": {
+      "cardType": "Bank",
       "Internet": 5,
       "Office Supplies": 5,
       "Phone": 5,
@@ -635,6 +1188,7 @@
       }
     },
     "Chase Ink Business Preferred": {
+      "cardType": "Bank",
       "Chase Travel": 3,
       "Travel": 3,
       "Shipping": 3,
@@ -644,12 +1198,15 @@
       "Other": 1
     },
     "Chase Ink Business Premier": {
+      "cardType": "Bank",
       "Other": 2
     },
     "Chase Ink Business Unlimited": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Chase Sapphire Preferred": {
+      "cardType": "Bank",
       "Chase Travel": 5,
       "Dining": 3,
       "Online Groceries": 3,
@@ -682,6 +1239,7 @@
       ]
     },
     "Chase Sapphire Reserve": {
+      "cardType": "Bank",
       "Chase Travel": 8,
       "Flights": 4,
       "Hotels": 4,
@@ -689,12 +1247,14 @@
       "Other": 1
     },
     "Chase Sapphire Reserve for Business": {
+      "cardType": "Bank",
       "Chase Travel": 8,
       "Flights": 4,
       "Hotels": 4,
       "Other": 1
     },
     "Citi AAdvantage Business": {
+      "cardType": "Airline",
       "American Airlines": 2,
       "Gas": 2,
       "Internet": 2,
@@ -702,12 +1262,14 @@
       "Other": 1
     },
     "Citi AAdvantage Executive": {
+      "cardType": "Airline",
       "AAdvantage Hotels": 10,
       "AAdvantage Cars": 10,
       "American Airlines": 4,
       "Other": 1
     },
     "Citi AAdvantage Globe": {
+      "cardType": "Airline",
       "AAdvantage Hotels": 6,
       "American Airlines": 3,
       "Dining": 2,
@@ -715,22 +1277,26 @@
       "Other": 1
     },
     "Citi AAdvantage Platinum Select": {
+      "cardType": "Airline",
       "American Airlines": 2,
       "Gas": 2,
       "Dining": 2,
       "Other": 1
     },
     "Citi Custom Cash": {
+      "cardType": "Bank",
       "Top Category": 5,
       "Citi Travel": 4,
       "Other": 1,
-      "trackingNote": "Spend cap tracking isn't available — this card's 5% category is determined automatically by Citi based on your highest monthly spending across all purchases."
+      "trackingNote": "Spend cap tracking isn't available \u2014 this card's 5% category is determined automatically by Citi based on your highest monthly spending across all purchases."
     },
     "Citi Double Cash": {
+      "cardType": "Bank",
       "Citi Travel": 5,
       "Other": 2
     },
     "Citi Rewards+": {
+      "cardType": "Bank",
       "Groceries": 2,
       "Gas": 2,
       "Other": 1,
@@ -752,6 +1318,7 @@
       }
     },
     "Citi Strata Elite": {
+      "cardType": "Bank",
       "Citi Travel": 12,
       "Citi Travel Flights": 6,
       "Dining Weekend": 6,
@@ -759,6 +1326,7 @@
       "Other": 1.5
     },
     "Citi Strata Premier": {
+      "cardType": "Bank",
       "Citi Travel": 10,
       "Hotels": 3,
       "Flights": 3,
@@ -769,6 +1337,7 @@
       "Other": 1
     },
     "Costco Anywhere Visa by Citi": {
+      "cardType": "Bank",
       "Gas": 4,
       "EV Charging": 4,
       "Dining": 3,
@@ -793,17 +1362,20 @@
       }
     },
     "Delta SkyMiles Blue American Express": {
+      "cardType": "Airline",
       "Delta": 2,
       "Dining": 2,
       "Other": 1
     },
     "Delta SkyMiles Gold American Express": {
+      "cardType": "Airline",
       "Delta": 2,
       "Dining": 2,
       "Groceries": 2,
       "Other": 1
     },
     "Delta SkyMiles Gold Business American Express": {
+      "cardType": "Airline",
       "Delta": 2,
       "Shipping": 2,
       "Advertising": 2,
@@ -811,6 +1383,7 @@
       "Other": 1
     },
     "Delta SkyMiles Platinum American Express": {
+      "cardType": "Airline",
       "Delta": 3,
       "Hotels": 3,
       "Dining": 2,
@@ -818,22 +1391,26 @@
       "Other": 1
     },
     "Delta SkyMiles Platinum Business American Express": {
+      "cardType": "Airline",
       "Delta": 3,
       "Transit": 1.5,
       "Shipping": 1.5,
       "Other": 1
     },
     "Delta SkyMiles Reserve American Express": {
+      "cardType": "Airline",
       "Delta": 3,
       "Other": 1
     },
     "Delta SkyMiles Reserve Business American Express": {
+      "cardType": "Airline",
       "Delta": 3,
       "Transit": 1.5,
       "Shipping": 1.5,
       "Other": 1
     },
     "Discover It Cash Back": {
+      "cardType": "Bank",
       "categories": {
         "Other": 1
       },
@@ -976,6 +1553,7 @@
       }
     },
     "Discover it Chrome": {
+      "cardType": "Bank",
       "Gas": 2,
       "Dining": 2,
       "Other": 1,
@@ -997,9 +1575,11 @@
       }
     },
     "Discover it Miles": {
+      "cardType": "Bank",
       "Other": 1.5
     },
     "Discover it Secured": {
+      "cardType": "Bank",
       "Gas": 2,
       "Dining": 2,
       "Other": 1,
@@ -1021,6 +1601,7 @@
       }
     },
     "Discover it Student Cash Back": {
+      "cardType": "Bank",
       "categories": {
         "Other": 1
       },
@@ -1163,6 +1744,7 @@
       }
     },
     "Hilton Honors American Express": {
+      "cardType": "Hotel",
       "Hilton": 7,
       "Dining": 5,
       "Groceries": 5,
@@ -1170,6 +1752,7 @@
       "Other": 3
     },
     "Hilton Honors American Express Aspire": {
+      "cardType": "Hotel",
       "Hilton": 14,
       "Flights": 7,
       "Amex Travel": 7,
@@ -1178,6 +1761,7 @@
       "Other": 3
     },
     "Hilton Honors American Express Surpass": {
+      "cardType": "Hotel",
       "Hilton": 12,
       "Dining": 6,
       "Groceries": 6,
@@ -1186,6 +1770,7 @@
       "Other": 3
     },
     "IHG One Rewards Premier": {
+      "cardType": "Hotel",
       "IHG": 10,
       "Travel": 5,
       "Dining": 5,
@@ -1193,18 +1778,21 @@
       "Other": 3
     },
     "JetBlue Card": {
+      "cardType": "Airline",
       "JetBlue": 3,
       "Dining": 2,
       "Groceries": 2,
       "Other": 1
     },
     "JetBlue Plus": {
+      "cardType": "Airline",
       "JetBlue": 6,
       "Dining": 2,
       "Groceries": 2,
       "Other": 1
     },
     "Marriott Bonvoy Boundless": {
+      "cardType": "Hotel",
       "Marriott": 6,
       "Dining": 3,
       "Gas": 3,
@@ -1229,12 +1817,14 @@
       }
     },
     "Marriott Bonvoy Brilliant": {
+      "cardType": "Hotel",
       "Marriott": 6,
       "Dining": 3,
       "Flights": 3,
       "Other": 2
     },
     "Southwest Rapid Rewards Plus": {
+      "cardType": "Airline",
       "Southwest": 2,
       "Gas": 2,
       "Groceries": 2,
@@ -1257,6 +1847,7 @@
       }
     },
     "Southwest Rapid Rewards Premier": {
+      "cardType": "Airline",
       "Southwest": 3,
       "Dining": 2,
       "Groceries": 2,
@@ -1279,12 +1870,14 @@
       }
     },
     "Southwest Rapid Rewards Priority": {
+      "cardType": "Airline",
       "Southwest": 4,
       "Gas": 2,
       "Dining": 2,
       "Other": 1
     },
     "U.S. Bank Altitude Connect": {
+      "cardType": "Bank",
       "US Bank Travel": 5,
       "Travel": 4,
       "Gas": 4,
@@ -1344,6 +1937,7 @@
       }
     },
     "U.S. Bank Altitude Go": {
+      "cardType": "Bank",
       "Dining": 4,
       "Groceries": 2,
       "Gas": 2,
@@ -1384,11 +1978,13 @@
       ]
     },
     "U.S. Bank Altitude Reserve": {
+      "cardType": "Bank",
       "US Bank Travel": 5,
       "Travel": 3,
       "Other": 1
     },
     "U.S. Bank Business Altitude Connect": {
+      "cardType": "Bank",
       "US Bank Travel": 5,
       "Travel": 4,
       "Gas": 4,
@@ -1398,11 +1994,13 @@
       "Other": 1
     },
     "U.S. Bank Business Altitude Power": {
+      "cardType": "Bank",
       "Top Category": 6,
       "Other": 1.5,
-      "trackingNote": "Spend cap tracking isn't available — this card's bonus category is determined automatically by U.S. Bank based on your highest monthly spending."
+      "trackingNote": "Spend cap tracking isn't available \u2014 this card's bonus category is determined automatically by U.S. Bank based on your highest monthly spending."
     },
     "U.S. Bank Cash+": {
+      "cardType": "Bank",
       "Top Category": 5,
       "Everyday Category": 2,
       "Other": 1,
@@ -1525,9 +2123,11 @@
       }
     },
     "U.S. Bank Smartly Visa Signature": {
+      "cardType": "Bank",
       "Other": 2
     },
     "U.S. Bank Triple Cash Rewards": {
+      "cardType": "Bank",
       "US Bank Travel": 5,
       "Dining": 3,
       "Gas": 3,
@@ -1537,18 +2137,21 @@
       "Other": 1
     },
     "United Club Infinite": {
+      "cardType": "Airline",
       "United": 5,
       "Travel": 2,
       "Dining": 2,
       "Other": 1
     },
     "United Explorer": {
+      "cardType": "Airline",
       "United": 3,
       "Dining": 2,
       "Hotels": 2,
       "Other": 1
     },
     "United Quest": {
+      "cardType": "Airline",
       "United": 4,
       "Travel": 2,
       "Dining": 2,
@@ -1563,9 +2166,11 @@
       ]
     },
     "Wells Fargo Active Cash": {
+      "cardType": "Bank",
       "Other": 2
     },
     "Wells Fargo Attune": {
+      "cardType": "Bank",
       "Beauty": 4,
       "Fitness": 4,
       "Entertainment": 4,
@@ -1577,6 +2182,7 @@
       "Other": 1
     },
     "Wells Fargo Autograph": {
+      "cardType": "Bank",
       "Dining": 3,
       "Travel": 3,
       "Gas": 3,
@@ -1587,6 +2193,7 @@
       "Other": 1
     },
     "Wells Fargo Autograph Journey": {
+      "cardType": "Bank",
       "Hotels": 5,
       "Flights": 4,
       "Dining": 3,
@@ -1594,9 +2201,11 @@
       "Other": 1
     },
     "Wells Fargo Signify Business Cash": {
+      "cardType": "Bank",
       "Other": 2
     },
     "World of Hyatt": {
+      "cardType": "Hotel",
       "Hyatt": 4,
       "Dining": 2,
       "Flights": 2,
@@ -2165,20 +2774,31 @@
     "officedepot.com": "Office Supplies",
     "officemax.com": "Office Supplies",
     "staples.com": "Office Supplies",
-    "advanceautoparts.com": "Online Retail",
-    "apple.com": "Online Retail",
-    "autozone.com": "Online Retail",
-    "bathandbodyworks.com": "Online Retail",
-    "bedbathandbeyond.com": "Online Retail",
-    "burlington.com": "Online Retail",
-    "dollargeneral.com": "Online Retail",
-    "dollartree.com": "Online Retail",
-    "ebay.com": "Online Retail",
-    "familydollar.com": "Online Retail",
-    "fivebelow.com": "Online Retail",
-    "oreillyauto.com": "Online Retail",
-    "overstock.com": "Online Retail",
-    "ross.com": "Online Retail",
+    "advanceautoparts.com": "Auto Parts",
+    "apple.com": "Electronics",
+    "autozone.com": "Auto Parts",
+    "bathandbodyworks.com": "Beauty",
+    "bedbathandbeyond.com": "Furniture",
+    "burlington.com": "Clothing",
+    "dollargeneral.com": "Discount Stores",
+    "dollartree.com": "Discount Stores",
+    "ebay.com": "Online Marketplaces",
+    "carparts.com": "Auto Parts",
+    "napaonline.com": "Auto Parts",
+    "pepboys.com": "Auto Parts",
+    "rockauto.com": "Auto Parts",
+    "summitracing.com": "Auto Parts",
+    "depop.com": "Online Marketplaces",
+    "mercari.com": "Online Marketplaces",
+    "offerup.com": "Online Marketplaces",
+    "poshmark.com": "Online Marketplaces",
+    "reverb.com": "Online Marketplaces",
+    "therealreal.com": "Online Marketplaces",
+    "familydollar.com": "Discount Stores",
+    "fivebelow.com": "Discount Stores",
+    "oreillyauto.com": "Auto Parts",
+    "overstock.com": "Furniture",
+    "ross.com": "Clothing",
     "activebuilding.com": "Other",
     "appfolio.com": "Other",
     "avail.co": "Other",
@@ -2205,17 +2825,17 @@
     "enterprisetruckrental.com": "Other",
     "entrata.com": "Other",
     "erentpayment.com": "Other",
-    "etsy.com": "Other",
+    "etsy.com": "Online Marketplaces",
     "godaddy.com": "Other",
     "google.com": "Other",
     "gozego.com": "Other",
     "grok.com": "Other",
-    "homegoods.com": "Other",
+    "homegoods.com": "Furniture",
     "hostgator.com": "Other",
     "innago.com": "Other",
     "jasper.ai": "Other",
     "managebuilding.com": "Other",
-    "microsoft.com": "Other",
+    "microsoft.com": "Electronics",
     "microsoft365.com": "Other",
     "midjourney.com": "Other",
     "mistral.ai": "Other",
@@ -2243,21 +2863,23 @@
     "residentportal.com": "Other",
     "runwayml.com": "Other",
     "ryder.com": "Other",
+    "safelite.com": "Other",
     "securecafe.com": "Other",
     "securecafenet.com": "Other",
     "shopify.com": "Other",
     "siteground.com": "Other",
     "squarespace.com": "Other",
-    "target.com": "Other",
-    "temu.com": "Other",
+    "target.com": "Superstores",
+    "temu.com": "Online Marketplaces",
     "tenantcloud.com": "Other",
     "uhaul.com": "Other",
-    "us.homesense.com": "Other",
-    "walmart.com": "Other",
-    "wish.com": "Other",
+    "us.homesense.com": "Furniture",
+    "walmart.com": "Superstores",
+    "kmart.com": "Superstores",
+    "wish.com": "Online Marketplaces",
     "wix.com": "Other",
     "workspace.google.com": "Other",
-    "xbox.com": "Other",
+    "xbox.com": "Electronics",
     "yahoo.com": "Other",
     "1800petmeds.com": "Pet Supplies",
     "barkbox.com": "Pet Supplies",
@@ -2280,8 +2902,10 @@
     "wireless.att.com": "Phone",
     "dhl.com": "Shipping",
     "fedex.com": "Shipping",
+    "pirateship.com": "Shipping",
     "pitneyshipper.com": "Shipping",
     "shipbob.com": "Shipping",
+    "shiprush.com": "Shipping",
     "stamps.com": "Shipping",
     "ups.com": "Shipping",
     "usps.com": "Shipping",
@@ -2478,474 +3102,474 @@
     "Alaska Airlines Visa Signature": {
       "color": "#0097A7",
       "abbr": "Alaska",
-      "group": "Alaska Airlines — Personal (Bank of America)"
+      "group": "Alaska Airlines \u2014 Personal (Bank of America)"
     },
     "American Express Green": {
       "color": "#007A4D",
       "abbr": "Amex",
-      "group": "American Express — Personal"
+      "group": "American Express \u2014 Personal"
     },
     "American Express Gold": {
       "color": "#B8860B",
       "abbr": "Amex",
-      "group": "American Express — Personal"
+      "group": "American Express \u2014 Personal"
     },
     "American Express Platinum": {
       "color": "#A0A0A0",
       "abbr": "Amex",
-      "group": "American Express — Personal"
+      "group": "American Express \u2014 Personal"
     },
     "American Express Blue Cash Everyday": {
       "color": "#006FCF",
       "abbr": "Amex",
-      "group": "American Express — Personal"
+      "group": "American Express \u2014 Personal"
     },
     "American Express Blue Cash Preferred": {
       "color": "#006FCF",
       "abbr": "Amex",
-      "group": "American Express — Personal"
+      "group": "American Express \u2014 Personal"
     },
     "American Express Blue Business Plus": {
       "color": "#006FCF",
       "abbr": "Amex",
-      "group": "American Express — Business"
+      "group": "American Express \u2014 Business"
     },
     "American Express Business Gold": {
       "color": "#B8860B",
       "abbr": "Amex",
-      "group": "American Express — Business"
+      "group": "American Express \u2014 Business"
     },
     "American Express Business Platinum": {
       "color": "#A0A0A0",
       "abbr": "Amex",
-      "group": "American Express — Business"
+      "group": "American Express \u2014 Business"
     },
     "Apple Card": {
       "color": "#636366",
       "abbr": "Apple",
-      "group": "Apple — Personal (Goldman Sachs)"
+      "group": "Apple \u2014 Personal (Goldman Sachs)"
     },
     "Bank of America Customized Cash Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Personal",
+      "group": "Bank of America \u2014 Personal",
       "portal": "bankofamerica.com"
     },
     "Bank of America Unlimited Cash Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Personal"
+      "group": "Bank of America \u2014 Personal"
     },
     "Bank of America Travel Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Personal"
+      "group": "Bank of America \u2014 Personal"
     },
     "Bank of America Premium Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Personal"
+      "group": "Bank of America \u2014 Personal"
     },
     "Bank of America Premium Rewards Elite": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Personal"
+      "group": "Bank of America \u2014 Personal"
     },
     "Bank of America Business Advantage Customized Cash Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Business",
+      "group": "Bank of America \u2014 Business",
       "portal": "bankofamerica.com"
     },
     "Bank of America Business Advantage Unlimited Cash Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Business"
+      "group": "Bank of America \u2014 Business"
     },
     "Bank of America Business Advantage Travel Rewards": {
       "color": "#E31837",
       "abbr": "BofA",
-      "group": "Bank of America — Business"
+      "group": "Bank of America \u2014 Business"
     },
     "Bilt Blue": {
       "color": "#2563EB",
       "abbr": "BILT",
-      "group": "Bilt — Personal (Column N.A.)"
+      "group": "Bilt \u2014 Personal (Column N.A.)"
     },
     "Bilt Obsidian": {
       "color": "#1C1C1E",
       "abbr": "BILT",
-      "group": "Bilt — Personal (Column N.A.)",
+      "group": "Bilt \u2014 Personal (Column N.A.)",
       "portal": "biltrewards.com"
     },
     "Bilt Palladium": {
       "color": "#8E8E93",
       "abbr": "BILT",
-      "group": "Bilt — Personal (Column N.A.)"
+      "group": "Bilt \u2014 Personal (Column N.A.)"
     },
     "Capital One VentureOne": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One Quicksilver": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One QuicksilverOne": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One Savor": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One Venture": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One Venture X": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Personal"
+      "group": "Capital One \u2014 Personal"
     },
     "Capital One Spark Cash Plus": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Business"
+      "group": "Capital One \u2014 Business"
     },
     "Capital One Spark Miles": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Business"
+      "group": "Capital One \u2014 Business"
     },
     "Capital One Venture X Business": {
       "color": "#CC0000",
       "abbr": "CapOne",
-      "group": "Capital One — Business"
+      "group": "Capital One \u2014 Business"
     },
     "Chase Freedom Rise": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Personal"
+      "group": "Chase \u2014 Personal"
     },
     "Chase Freedom Unlimited": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Personal"
+      "group": "Chase \u2014 Personal"
     },
     "Chase Freedom Flex": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Personal",
+      "group": "Chase \u2014 Personal",
       "portal": "chase.com"
     },
     "Chase Sapphire Preferred": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Personal"
+      "group": "Chase \u2014 Personal"
     },
     "Chase Sapphire Reserve": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Personal"
+      "group": "Chase \u2014 Personal"
     },
     "Chase Ink Business Cash": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Business"
+      "group": "Chase \u2014 Business"
     },
     "Chase Ink Business Unlimited": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Business"
+      "group": "Chase \u2014 Business"
     },
     "Chase Ink Business Preferred": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Business"
+      "group": "Chase \u2014 Business"
     },
     "Chase Ink Business Premier": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Business"
+      "group": "Chase \u2014 Business"
     },
     "Chase Sapphire Reserve for Business": {
       "color": "#115EA3",
       "abbr": "Chase",
-      "group": "Chase — Business"
+      "group": "Chase \u2014 Business"
     },
     "Citi AAdvantage Platinum Select": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi AAdvantage Globe": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi AAdvantage Executive": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi Double Cash": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi Custom Cash": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi Rewards+": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi Strata Premier": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi Strata Elite": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Personal"
+      "group": "Citi \u2014 Personal"
     },
     "Citi AAdvantage Business": {
       "color": "#003B6F",
       "abbr": "Citi",
-      "group": "Citi — Business"
+      "group": "Citi \u2014 Business"
     },
     "Costco Anywhere Visa by Citi": {
       "color": "#E31837",
       "abbr": "Costco",
-      "group": "Costco — Personal (Citi)"
+      "group": "Costco \u2014 Personal (Citi)"
     },
     "Delta SkyMiles Blue American Express": {
       "color": "#003366",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Personal (American Express)"
+      "group": "Delta SkyMiles \u2014 Personal (American Express)"
     },
     "Delta SkyMiles Gold American Express": {
       "color": "#B8860B",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Personal (American Express)"
+      "group": "Delta SkyMiles \u2014 Personal (American Express)"
     },
     "Delta SkyMiles Platinum American Express": {
       "color": "#A0A0A0",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Personal (American Express)"
+      "group": "Delta SkyMiles \u2014 Personal (American Express)"
     },
     "Delta SkyMiles Reserve American Express": {
       "color": "#1A1A1A",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Personal (American Express)"
+      "group": "Delta SkyMiles \u2014 Personal (American Express)"
     },
     "Delta SkyMiles Gold Business American Express": {
       "color": "#B8860B",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Business (American Express)"
+      "group": "Delta SkyMiles \u2014 Business (American Express)"
     },
     "Delta SkyMiles Platinum Business American Express": {
       "color": "#A0A0A0",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Business (American Express)"
+      "group": "Delta SkyMiles \u2014 Business (American Express)"
     },
     "Delta SkyMiles Reserve Business American Express": {
       "color": "#1A1A1A",
       "abbr": "Delta",
-      "group": "Delta SkyMiles — Business (American Express)"
+      "group": "Delta SkyMiles \u2014 Business (American Express)"
     },
     "Discover It Cash Back": {
       "color": "#FF6600",
       "abbr": "Discover",
-      "group": "Discover — Personal",
+      "group": "Discover \u2014 Personal",
       "portal": "discover.com"
     },
     "Discover it Chrome": {
       "color": "#FF6600",
       "abbr": "Discover",
-      "group": "Discover — Personal"
+      "group": "Discover \u2014 Personal"
     },
     "Discover it Miles": {
       "color": "#FF6600",
       "abbr": "Discover",
-      "group": "Discover — Personal"
+      "group": "Discover \u2014 Personal"
     },
     "Discover it Student Cash Back": {
       "color": "#FF6600",
       "abbr": "Discover",
-      "group": "Discover — Personal",
+      "group": "Discover \u2014 Personal",
       "portal": "discover.com"
     },
     "Discover it Secured": {
       "color": "#FF6600",
       "abbr": "Discover",
-      "group": "Discover — Personal"
+      "group": "Discover \u2014 Personal"
     },
     "Hilton Honors American Express": {
       "color": "#0074C0",
       "abbr": "Hilton",
-      "group": "Hilton Honors — Personal (American Express)"
+      "group": "Hilton Honors \u2014 Personal (American Express)"
     },
     "Hilton Honors American Express Surpass": {
       "color": "#0074C0",
       "abbr": "Hilton",
-      "group": "Hilton Honors — Personal (American Express)"
+      "group": "Hilton Honors \u2014 Personal (American Express)"
     },
     "Hilton Honors American Express Aspire": {
       "color": "#C9952E",
       "abbr": "Hilton",
-      "group": "Hilton Honors — Personal (American Express)"
+      "group": "Hilton Honors \u2014 Personal (American Express)"
     },
     "IHG One Rewards Premier": {
       "color": "#009BAA",
       "abbr": "IHG",
-      "group": "IHG One Rewards — Personal (Chase)"
+      "group": "IHG One Rewards \u2014 Personal (Chase)"
     },
     "JetBlue Card": {
       "color": "#00A1DE",
       "abbr": "JetBlue",
-      "group": "JetBlue — Personal (Barclays)"
+      "group": "JetBlue \u2014 Personal (Barclays)"
     },
     "JetBlue Plus": {
       "color": "#00A1DE",
       "abbr": "JetBlue",
-      "group": "JetBlue — Personal (Barclays)"
+      "group": "JetBlue \u2014 Personal (Barclays)"
     },
     "Marriott Bonvoy Boundless": {
       "color": "#CC2027",
       "abbr": "Marriott",
-      "group": "Marriott Bonvoy — Personal (Chase)"
+      "group": "Marriott Bonvoy \u2014 Personal (Chase)"
     },
     "Marriott Bonvoy Brilliant": {
       "color": "#CC2027",
       "abbr": "Marriott",
-      "group": "Marriott Bonvoy — Personal (American Express)"
+      "group": "Marriott Bonvoy \u2014 Personal (American Express)"
     },
     "Southwest Rapid Rewards Plus": {
       "color": "#304CB2",
       "abbr": "SW",
-      "group": "Southwest Rapid Rewards — Personal (Chase)"
+      "group": "Southwest Rapid Rewards \u2014 Personal (Chase)"
     },
     "Southwest Rapid Rewards Premier": {
       "color": "#304CB2",
       "abbr": "SW",
-      "group": "Southwest Rapid Rewards — Personal (Chase)"
+      "group": "Southwest Rapid Rewards \u2014 Personal (Chase)"
     },
     "Southwest Rapid Rewards Priority": {
       "color": "#E31837",
       "abbr": "SW",
-      "group": "Southwest Rapid Rewards — Personal (Chase)"
+      "group": "Southwest Rapid Rewards \u2014 Personal (Chase)"
     },
     "U.S. Bank Smartly Visa Signature": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Personal"
+      "group": "U.S. Bank \u2014 Personal"
     },
     "U.S. Bank Altitude Connect": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Personal"
+      "group": "U.S. Bank \u2014 Personal"
     },
     "U.S. Bank Altitude Go": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Personal"
+      "group": "U.S. Bank \u2014 Personal"
     },
     "U.S. Bank Cash+": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Personal",
+      "group": "U.S. Bank \u2014 Personal",
       "portal": "usbank.com"
     },
     "U.S. Bank Altitude Reserve": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Personal"
+      "group": "U.S. Bank \u2014 Personal"
     },
     "U.S. Bank Business Altitude Connect": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Business"
+      "group": "U.S. Bank \u2014 Business"
     },
     "U.S. Bank Triple Cash Rewards": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Business"
+      "group": "U.S. Bank \u2014 Business"
     },
     "U.S. Bank Business Altitude Power": {
       "color": "#42A5F5",
       "abbr": "USBank",
-      "group": "U.S. Bank — Business"
+      "group": "U.S. Bank \u2014 Business"
     },
     "United Explorer": {
       "color": "#1259C3",
       "abbr": "United",
-      "group": "United — Personal (Chase)"
+      "group": "United \u2014 Personal (Chase)"
     },
     "United Quest": {
       "color": "#1259C3",
       "abbr": "United",
-      "group": "United — Personal (Chase)"
+      "group": "United \u2014 Personal (Chase)"
     },
     "United Club Infinite": {
       "color": "#1259C3",
       "abbr": "United",
-      "group": "United — Personal (Chase)"
+      "group": "United \u2014 Personal (Chase)"
     },
     "United Explorer Card": {
       "color": "#1259C3",
       "abbr": "United",
-      "group": "United — Personal (Chase)"
+      "group": "United \u2014 Personal (Chase)"
     },
     "Wells Fargo Active Cash": {
       "color": "#CD0000",
       "abbr": "WF",
-      "group": "Wells Fargo — Personal"
+      "group": "Wells Fargo \u2014 Personal"
     },
     "Wells Fargo Attune": {
       "color": "#CD0000",
       "abbr": "WF",
-      "group": "Wells Fargo — Personal"
+      "group": "Wells Fargo \u2014 Personal"
     },
     "Wells Fargo Autograph": {
       "color": "#CD0000",
       "abbr": "WF",
-      "group": "Wells Fargo — Personal"
+      "group": "Wells Fargo \u2014 Personal"
     },
     "Wells Fargo Autograph Journey": {
       "color": "#CD0000",
       "abbr": "WF",
-      "group": "Wells Fargo — Personal"
+      "group": "Wells Fargo \u2014 Personal"
     },
     "Wells Fargo Signify Business Cash": {
       "color": "#CD0000",
       "abbr": "WF",
-      "group": "Wells Fargo — Business"
+      "group": "Wells Fargo \u2014 Business"
     },
     "World of Hyatt": {
       "color": "#C4A052",
       "abbr": "WoH",
-      "group": "World of Hyatt — Personal (Chase)"
+      "group": "World of Hyatt \u2014 Personal (Chase)"
     },
     "Amazon Prime Visa": {
       "color": "#FF9900",
       "abbr": "Amazon",
-      "group": "Amazon — Personal (Chase)"
+      "group": "Amazon \u2014 Personal (Chase)"
     },
     "Amazon Visa": {
       "color": "#FF9900",
       "abbr": "Amazon",
-      "group": "Amazon — Personal (Chase)"
+      "group": "Amazon \u2014 Personal (Chase)"
     }
   },
   "disabledCards": [],
