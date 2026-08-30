@@ -911,18 +911,6 @@
     "zoo": "Entertainment"
   },
   "cardsDatabase": {
-    "Atmos Rewards Ascent Visa Signature": {
-      "cardType": "Airline",
-      "Alaska Airlines": 3,
-      "Gas": 2,
-      "EV Charging": 2,
-      "Streaming": 2,
-      "Internet": 2,
-      "Transit": 2,
-      "Other": 1,
-      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines'). Formerly the Alaska Airlines Visa Signature card, renamed for the Atmos Rewards rebrand (rates unchanged).",
-      "issuer": "Bank of America"
-    },
     "Amazon Prime Visa": {
       "cardType": "Bank",
       "Amazon": 5,
@@ -1155,6 +1143,37 @@
       ],
       "issuer": "Goldman Sachs"
     },
+    "Atmos Rewards Ascent Visa Signature": {
+      "cardType": "Airline",
+      "Alaska Airlines": 3,
+      "Gas": 2,
+      "EV Charging": 2,
+      "Streaming": 2,
+      "Internet": 2,
+      "Transit": 2,
+      "Other": 1,
+      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines'). Formerly the Alaska Airlines Visa Signature card, renamed for the Atmos Rewards rebrand (rates unchanged).",
+      "issuer": "Bank of America"
+    },
+    "Atmos Rewards Summit Visa Infinite": {
+      "cardType": "Airline",
+      "Alaska Airlines": 3,
+      "Dining": 3,
+      "Other": 1,
+      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines') and on Dining. Also earns 3x on foreign-currency purchases, which isn't tracked here.",
+      "issuer": "Bank of America"
+    },
+    "Atmos Rewards Visa Signature Business": {
+      "cardType": "Airline",
+      "Alaska Airlines": 3,
+      "Gas": 2,
+      "EV Charging": 2,
+      "Shipping": 2,
+      "Transit": 2,
+      "Other": 1,
+      "trackingNote": "3x on Alaska Airlines and Hawaiian Airlines (both domains map to 'Alaska Airlines'). Formerly the Alaska Airlines Visa Business card, renamed for the Atmos Rewards rebrand (rates unchanged).",
+      "issuer": "Bank of America"
+    },
     "Bank of America Business Advantage Customized Cash Rewards": {
       "cardType": "Bank",
       "Choice Category": 3,
@@ -1170,7 +1189,8 @@
             "slots": 1,
             "uiLabel": "3% category",
             "cap": 50000,
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+            "capNote": "This $50,000 annual cap is shared — it covers your 3% choice category together with Dining (2%), not tracked separately. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+            "alwaysCategories": ["Dining"],
             "choices": [
               {
                 "label": "Dining",
@@ -1241,7 +1261,8 @@
             "slots": 1,
             "uiLabel": "3% category",
             "cap": 2500,
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+            "capNote": "This $2,500 quarterly cap is shared — it covers your 3% choice category together with Groceries and Wholesale Clubs (2%), not tracked separately. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate balance, check Bank of America's portal and edit the amount here.",
+            "alwaysCategories": ["Groceries", "Wholesale Clubs"],
             "choices": [
               {
                 "label": "Dining",
@@ -1640,7 +1661,7 @@
             "key": "5pct",
             "fallbackRate": 1,
             "cap": 25000,
-            "uiLabel": "5% tier",
+            "uiLabel": "5% internet/office/phone",
             "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
             "categories": [
               "Internet",
@@ -1652,7 +1673,7 @@
             "key": "2pct",
             "fallbackRate": 1,
             "cap": 25000,
-            "uiLabel": "2% tier",
+            "uiLabel": "2% gas/dining",
             "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
             "categories": [
               "Gas",
@@ -1679,7 +1700,7 @@
             "key": "3pct",
             "fallbackRate": 1,
             "cap": 150000,
-            "uiLabel": "3x bonus categories",
+            "uiLabel": "3x travel/shipping/ads/internet/phone",
             "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
             "categories": [
               "Chase Travel",
@@ -3866,8 +3887,18 @@
     },
     "Atmos Rewards Ascent Visa Signature": {
       "color": "#0097A7",
-      "abbr": "Alaska",
-      "group": "Alaska Airlines — Personal (Bank of America)"
+      "abbr": "Atmos",
+      "group": "Atmos Rewards — Personal (Bank of America)"
+    },
+    "Atmos Rewards Summit Visa Infinite": {
+      "color": "#00565E",
+      "abbr": "Atmos",
+      "group": "Atmos Rewards — Personal (Bank of America)"
+    },
+    "Atmos Rewards Visa Signature Business": {
+      "color": "#0097A7",
+      "abbr": "Atmos",
+      "group": "Atmos Rewards — Business (Bank of America)"
     },
     "Bank of America Customized Cash Rewards": {
       "color": "#E31837",
