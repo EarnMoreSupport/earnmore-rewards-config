@@ -1661,8 +1661,8 @@
             "key": "5pct",
             "fallbackRate": 1,
             "cap": 25000,
-            "uiLabel": "5% internet/office/phone",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
+            "uiLabel": "5% bonus categories",
+            "capNote": "Applies to Internet, Office Supplies, and Phone purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
             "categories": [
               "Internet",
               "Office Supplies",
@@ -1700,8 +1700,8 @@
             "key": "3pct",
             "fallbackRate": 1,
             "cap": 150000,
-            "uiLabel": "3x travel/shipping/ads/internet/phone",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
+            "uiLabel": "3x bonus categories",
+            "capNote": "Applies to Travel, Shipping, Advertising, Internet, and Phone purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check Chase's portal and edit the amount here.",
             "categories": [
               "Chase Travel",
               "Travel",
@@ -2406,8 +2406,8 @@
             "key": "bonus",
             "fallbackRate": 2,
             "cap": 6000,
-            "uiLabel": "3x dining/gas/groceries",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
+            "uiLabel": "3x bonus categories",
+            "capNote": "Applies to Dining, Gas, and Groceries purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
             "categories": [
               "Dining",
               "Gas",
@@ -2627,8 +2627,8 @@
             "key": "4x",
             "fallbackRate": 1,
             "cap": 150000,
-            "uiLabel": "4x travel/gas/EV",
-            "capNote": "Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check U.S. Bank's portal and edit the amount here.",
+            "uiLabel": "4x bonus categories",
+            "capNote": "Applies to Travel, Gas, and EV Charging purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked, so this may be incomplete. For an accurate total, check U.S. Bank's portal and edit the amount here.",
             "categories": ["Travel", "Gas", "EV Charging"]
           }
         ]
