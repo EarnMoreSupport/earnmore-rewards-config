@@ -3066,6 +3066,16 @@
       "Other": 1,
       "issuer": "Chase",
       "portalIneligible": true
+    },
+    "World of Hyatt Business": {
+      "cardType": "Hotel",
+      "Hyatt": 4,
+      "Top Category": 2,
+      "Fitness": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "trackingNote": "Spend cap tracking isn't available — this card's 2x bonus applies to whichever three categories you spend the most on each quarter, determined automatically by Chase from a select list of eligible categories, not chosen by you."
     }
   },
   "merchantDatabase": {
@@ -4581,6 +4591,11 @@
       "color": "#C4A052",
       "abbr": "WoH",
       "group": "World of Hyatt — Personal (Chase)"
+    },
+    "World of Hyatt Business": {
+      "color": "#C4A052",
+      "abbr": "WoH",
+      "group": "World of Hyatt — Business (Chase)"
     },
     "Amazon Prime Visa": {
       "color": "#FF9900",
