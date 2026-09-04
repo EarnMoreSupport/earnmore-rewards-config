@@ -309,6 +309,14 @@
       "subcategory": "Transit",
       "bucket": "Transportation"
     },
+    "Rideshare": {
+      "subcategory": "Rideshare",
+      "bucket": "Transportation"
+    },
+    "Lyft": {
+      "subcategory": "Rideshare",
+      "bucket": "Transportation"
+    },
     "Auto Parts": {
       "subcategory": "Auto Parts",
       "bucket": "Transportation"
@@ -528,7 +536,7 @@
     "catering_service": "Other",
     "cell_phone_store": "Electronics",
     "cemetery": "Other",
-    "chauffeur_service": "Other",
+    "chauffeur_service": "Rideshare",
     "chicken_restaurant": "Fast Food",
     "chicken_wings_restaurant": "Fast Food",
     "child_care_agency": "Other",
@@ -855,8 +863,8 @@
     "taiwanese_restaurant": "Dining",
     "tanning_studio": "Other",
     "tapas_restaurant": "Dining",
-    "taxi_service": "Transit",
-    "taxi_stand": "Transit",
+    "taxi_service": "Rideshare",
+    "taxi_stand": "Rideshare",
     "tea_house": "Dining",
     "tea_store": "Groceries",
     "telecommunications_service_provider": "Other",
@@ -1489,6 +1497,7 @@
     "Chase Freedom Flex": {
       "cardType": "Bank",
       "categories": {
+        "Lyft": 2,
         "Chase Travel": 5,
         "Dining": 3,
         "Drugstores": 3,
@@ -1635,11 +1644,13 @@
     },
     "Chase Freedom Rise": {
       "cardType": "Bank",
+      "Lyft": 2,
       "Other": 1.5,
       "issuer": "Chase"
     },
     "Chase Freedom Unlimited": {
       "cardType": "Bank",
+      "Lyft": 2,
       "Chase Travel": 5,
       "Dining": 3,
       "Drugstores": 3,
@@ -1648,6 +1659,7 @@
     },
     "Chase Ink Business Cash": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Internet": 5,
       "Office Supplies": 5,
       "Phone": 5,
@@ -1686,6 +1698,7 @@
     },
     "Chase Ink Business Preferred": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Chase Travel": 3,
       "Travel": 3,
       "Shipping": 3,
@@ -1717,17 +1730,20 @@
     },
     "Chase Ink Business Premier": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Chase Travel": 5,
       "Other": 2,
       "issuer": "Chase"
     },
     "Chase Ink Business Unlimited": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Other": 1.5,
       "issuer": "Chase"
     },
     "Chase Sapphire Preferred": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Chase Travel": 5,
       "Dining": 3,
       "Online Groceries": 3,
@@ -1762,6 +1778,7 @@
     },
     "Chase Sapphire Reserve": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Chase Travel": 8,
       "Flights": 4,
       "Hotels": 4,
@@ -1771,6 +1788,7 @@
     },
     "Chase Sapphire Reserve for Business": {
       "cardType": "Bank",
+      "Lyft": 5,
       "Chase Travel": 8,
       "Flights": 4,
       "Hotels": 4,
@@ -2336,6 +2354,11 @@
       },
       "issuer": "Discover"
     },
+    "F&A Credit Union Premier Rewards Visa": {
+      "cardType": "Bank",
+      "Other": 1,
+      "issuer": "F&A Credit Union"
+    },
     "Hilton Honors American Express": {
       "cardType": "Hotel",
       "Hilton": 7,
@@ -2366,6 +2389,47 @@
       "Other": 3,
       "issuer": "American Express"
     },
+    "IHG One Rewards Traveler": {
+      "cardType": "Hotel",
+      "IHG": 5,
+      "Dining": 3,
+      "Gas": 3,
+      "Utilities": 3,
+      "Internet": 3,
+      "Phone": 3,
+      "Streaming": 3,
+      "Other": 2,
+      "issuer": "Chase",
+      "portalIneligible": true
+    },
+    "IHG One Rewards Premier Business": {
+      "cardType": "Hotel",
+      "IHG": 10,
+      "Travel": 5,
+      "Dining": 5,
+      "Gas": 5,
+      "Office Supplies": 5,
+      "Advertising": 5,
+      "Other": 3,
+      "issuer": "Chase",
+      "portalIneligible": true
+    },
+    "JetBlue Premier": {
+      "cardType": "Airline",
+      "JetBlue": 6,
+      "Dining": 2,
+      "Groceries": 2,
+      "Other": 1,
+      "issuer": "Barclays"
+    },
+    "JetBlue Business": {
+      "cardType": "Airline",
+      "JetBlue": 6,
+      "Dining": 2,
+      "Office Supplies": 2,
+      "Other": 1,
+      "issuer": "Barclays"
+    },
     "IHG One Rewards Premier": {
       "cardType": "Hotel",
       "IHG": 10,
@@ -2391,6 +2455,92 @@
       "Groceries": 2,
       "Other": 1,
       "issuer": "Barclays"
+    },
+    "Marriott Bonvoy Bold": {
+      "cardType": "Hotel",
+      "Marriott": 3,
+      "Rideshare": 2,
+      "Food Delivery": 2,
+      "Groceries": 2,
+      "Internet": 2,
+      "Phone": 2,
+      "Streaming": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true
+    },
+    "Marriott Bonvoy Bountiful": {
+      "cardType": "Hotel",
+      "Marriott": 6,
+      "Dining": 4,
+      "Groceries": 4,
+      "Other": 2,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "spendCaps": {
+        "capPeriod": "annual",
+        "tiers": [{
+          "key": "bonus", "fallbackRate": 2, "cap": 15000, "uiLabel": "4x dining/groceries",
+          "capNote": "Applies to Dining and Groceries purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
+          "categories": ["Dining", "Groceries"]
+        }]
+      }
+    },
+    "Marriott Bonvoy Bevy": {
+      "cardType": "Hotel",
+      "Marriott": 6,
+      "Dining": 4,
+      "Groceries": 4,
+      "Other": 2,
+      "issuer": "American Express",
+      "spendCaps": {
+        "capPeriod": "annual",
+        "tiers": [{
+          "key": "bonus", "fallbackRate": 2, "cap": 15000, "uiLabel": "4x dining/groceries",
+          "capNote": "Applies to Dining and Groceries purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check American Express's portal for your complete total.",
+          "categories": ["Dining", "Groceries"]
+        }]
+      }
+    },
+    "Marriott Bonvoy Business": {
+      "cardType": "Hotel",
+      "Marriott": 6,
+      "Dining": 4,
+      "Gas": 4,
+      "Phone": 4,
+      "Shipping": 4,
+      "Other": 2,
+      "issuer": "American Express"
+    },
+    "Southwest Rapid Rewards Premier Business": {
+      "cardType": "Airline",
+      "Lyft": 3,
+      "Southwest": 3,
+      "Gas": 2,
+      "Dining": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "spendCaps": {
+        "capPeriod": "annual",
+        "tiers": [{
+          "key": "bonus", "fallbackRate": 1, "cap": 8000, "uiLabel": "2x gas/dining",
+          "capNote": "Applies to Gas and Dining purchases, combined. Only tracks online purchases confirmed through EarnMore. In-person spending isn't tracked. Check Chase's portal for your complete total.",
+          "categories": ["Gas", "Dining"]
+        }]
+      }
+    },
+    "Southwest Rapid Rewards Performance Business": {
+      "cardType": "Airline",
+      "Lyft": 5,
+      "Southwest": 4,
+      "Hotels": 2,
+      "Gas": 2,
+      "Dining": 2,
+      "Transit": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true
     },
     "Marriott Bonvoy Boundless": {
       "cardType": "Hotel",
@@ -2429,6 +2579,7 @@
     },
     "Southwest Rapid Rewards Plus": {
       "cardType": "Airline",
+      "Lyft": 2,
       "Southwest": 2,
       "Gas": 2,
       "Groceries": 2,
@@ -2454,6 +2605,7 @@
     },
     "Southwest Rapid Rewards Premier": {
       "cardType": "Airline",
+      "Lyft": 3,
       "Southwest": 3,
       "Dining": 2,
       "Groceries": 2,
@@ -2479,6 +2631,7 @@
     },
     "Southwest Rapid Rewards Priority": {
       "cardType": "Airline",
+      "Lyft": 5,
       "Southwest": 4,
       "Gas": 2,
       "Dining": 2,
@@ -2788,14 +2941,47 @@
       "US Bank Travel Hotels": 5,
       "US Bank Travel Cars": 5
     },
-    "United Club Infinite": {
+    "United Club": {
       "cardType": "Airline",
       "United": 5,
+      "Renowned Hotels": 5,
       "Travel": 2,
       "Dining": 2,
       "Other": 1,
       "issuer": "Chase",
-      "portalIneligible": true
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
+    },
+    "United Gateway": {
+      "cardType": "Airline",
+      "United": 2,
+      "Gas": 2,
+      "Transit": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
+    },
+    "United Business": {
+      "cardType": "Airline",
+      "United": 2,
+      "Dining": 2,
+      "Gas": 2,
+      "Office Supplies": 2,
+      "Transit": 2,
+      "Other": 1,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
+    },
+    "United Club Business": {
+      "cardType": "Airline",
+      "United": 2,
+      "Renowned Hotels": 5,
+      "Other": 1.5,
+      "issuer": "Chase",
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
     },
     "United Explorer": {
       "cardType": "Airline",
@@ -2804,11 +2990,13 @@
       "Hotels": 2,
       "Other": 1,
       "issuer": "Chase",
-      "portalIneligible": true
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
     },
     "United Quest": {
       "cardType": "Airline",
       "United": 4,
+      "Renowned Hotels": 5,
       "Travel": 2,
       "Dining": 2,
       "Streaming": 2,
@@ -2821,7 +3009,8 @@
         "spotify.com"
       ],
       "issuer": "Chase",
-      "portalIneligible": true
+      "portalIneligible": true,
+      "trackingNote": "United's mileage earning on flights now also depends on your MileagePlus elite status tier, on top of this card's own rate — that tier bonus isn't tracked here, so your real earning on United tickets may be higher than shown."
     },
     "Wells Fargo Active Cash": {
       "cardType": "Bank",
@@ -2990,30 +3179,24 @@
     "baskinrobbins.com": "Dining",
     "benandjerrys.com": "Dining",
     "casanovasmexicangrill.com": "Dining",
-    "caviar.com": "Dining",
     "chilis.com": "Dining",
     "coldstone.com": "Dining",
     "crackerbarrel.com": "Dining",
     "dennys.com": "Dining",
-    "doordash.com": "Dining",
     "eataly.com": "Dining",
     "friendlys.com": "Dining",
     "gopuff.com": "Dining",
-    "grubhub.com": "Dining",
     "haagen-dazs.com": "Dining",
     "ihop.com": "Dining",
     "olivegarden.com": "Dining",
     "opentable.com": "Dining",
     "outback.com": "Dining",
-    "postmates.com": "Dining",
     "restaurantweek.com": "Dining",
     "resy.com": "Dining",
-    "seamless.com": "Dining",
     "starbucks.com": "Fast Food",
     "sweetgreen.com": "Dining",
     "texasroadhouse.com": "Dining",
     "tock.com": "Dining",
-    "ubereats.com": "Dining",
     "cvs.com": "Drugstores",
     "duanereade.com": "Drugstores",
     "kerrdrug.com": "Drugstores",
@@ -3040,46 +3223,24 @@
     "bowlero.com": "Entertainment",
     "bowlluckystrike.com": "Entertainment",
     "broadway.com": "Entertainment",
-    "buschgardens.com": "Entertainment",
-    "cedarpoint.com": "Multi-Category Merchant",
-    "aria.com": "Multi-Category Merchant",
-    "bellagio.com": "Multi-Category Merchant",
-    "caesars.com": "Multi-Category Merchant",
-    "mandalaybay.com": "Multi-Category Merchant",
-    "mgmresorts.com": "Multi-Category Merchant",
-    "venetian.com": "Multi-Category Merchant",
-    "wynnlasvegas.com": "Multi-Category Merchant",
     "circuitcat.com": "Entertainment",
     "daveandbusters.com": "Entertainment",
-    "disneyland.com": "Multi-Category Merchant",
-    "disneylandparis.com": "Multi-Category Merchant",
-    "disneyworld.com": "Multi-Category Merchant",
-    "dollywood.com": "Multi-Category Merchant",
     "driveshack.com": "Entertainment",
     "eventbrite.com": "Entertainment",
-    "hersheypark.com": "Multi-Category Merchant",
-    "hongkongdisneyland.com": "Multi-Category Merchant",
     "k1speed.com": "Entertainment",
-    "knotts.com": "Multi-Category Merchant",
     "livenation.com": "Entertainment",
     "mainevent.com": "Entertainment",
     "pinstripes.com": "Entertainment",
     "popstroke.com": "Entertainment",
     "round1usa.com": "Entertainment",
     "seatgeek.com": "Entertainment",
-    "seaworld.com": "Entertainment",
-    "shanghaidisneyresort.com": "Multi-Category Merchant",
-    "sixflags.com": "Entertainment",
     "skyzone.com": "Entertainment",
     "splitsville.com": "Entertainment",
     "stubhub.com": "Entertainment",
     "telecharge.com": "Entertainment",
     "ticketmaster.com": "Entertainment",
     "tickets.com": "Entertainment",
-    "tokyodisneyresort.jp": "Multi-Category Merchant",
     "topgolf.com": "Entertainment",
-    "universalorlando.com": "Multi-Category Merchant",
-    "universalstudios.com": "Entertainment",
     "urbanair.com": "Entertainment",
     "vividseats.com": "Entertainment",
     "1800contacts.com": "Eyewear",
@@ -3248,6 +3409,14 @@
     "proflowers.com": "Flowers & Gifts",
     "teleflora.com": "Flowers & Gifts",
     "urbanstems.com": "Flowers & Gifts",
+    "caviar.com": "Food Delivery",
+    "delivery.com": "Food Delivery",
+    "doordash.com": "Food Delivery",
+    "grubhub.com": "Food Delivery",
+    "postmates.com": "Food Delivery",
+    "seamless.com": "Food Delivery",
+    "trycaviar.com": "Food Delivery",
+    "ubereats.com": "Food Delivery",
     "article.com": "Furniture",
     "ashleyfurniture.com": "Furniture",
     "cb2.com": "Furniture",
@@ -3503,6 +3672,28 @@
     "regmovies.com": "Movies",
     "showcasecinemas.com": "Movies",
     "studiomoviegrill.com": "Movies",
+    "aria.com": "Multi-Category Merchant",
+    "bellagio.com": "Multi-Category Merchant",
+    "buschgardens.com": "Multi-Category Merchant",
+    "caesars.com": "Multi-Category Merchant",
+    "cedarpoint.com": "Multi-Category Merchant",
+    "disneyland.com": "Multi-Category Merchant",
+    "disneylandparis.com": "Multi-Category Merchant",
+    "disneyworld.com": "Multi-Category Merchant",
+    "dollywood.com": "Multi-Category Merchant",
+    "hersheypark.com": "Multi-Category Merchant",
+    "hongkongdisneyland.com": "Multi-Category Merchant",
+    "knotts.com": "Multi-Category Merchant",
+    "mandalaybay.com": "Multi-Category Merchant",
+    "mgmresorts.com": "Multi-Category Merchant",
+    "seaworld.com": "Multi-Category Merchant",
+    "shanghaidisneyresort.com": "Multi-Category Merchant",
+    "sixflags.com": "Multi-Category Merchant",
+    "tokyodisneyresort.jp": "Multi-Category Merchant",
+    "universalorlando.com": "Multi-Category Merchant",
+    "universalstudios.com": "Multi-Category Merchant",
+    "venetian.com": "Multi-Category Merchant",
+    "wynnlasvegas.com": "Multi-Category Merchant",
     "gear4music.com": "Musical Instruments",
     "guitarcenter.com": "Musical Instruments",
     "musiciansfriend.com": "Musical Instruments",
@@ -3724,7 +3915,10 @@
     "italotreno.it": "Transit",
     "japanrailpass.net": "Transit",
     "korail.com": "Transit",
-    "lyft.com": "Transit",
+    "blacklane.com": "Rideshare",
+    "curb.com": "Rideshare",
+    "gett.com": "Rideshare",
+    "lyft.com": "Lyft",
     "megabus.com": "Transit",
     "nationalrail.co.uk": "Transit",
     "ns.nl": "Transit",
@@ -3747,7 +3941,7 @@
     "thsrc.com.tw": "Transit",
     "trailways.com": "Transit",
     "trenitalia.com": "Transit",
-    "uber.com": "Transit",
+    "uber.com": "Rideshare",
     "viarail.ca": "Transit",
     "wanderu.com": "Transit",
     "westjr.co.jp": "Transit",
@@ -4177,6 +4371,11 @@
       "abbr": "Discover",
       "group": "Discover — Personal"
     },
+    "F&A Credit Union Premier Rewards Visa": {
+      "color": "#C8102E",
+      "abbr": "F&A",
+      "group": "F&A Credit Union — Personal"
+    },
     "Hilton Honors American Express": {
       "color": "#0074C0",
       "abbr": "Hilton",
@@ -4192,6 +4391,26 @@
       "abbr": "Hilton",
       "group": "Hilton Honors — Personal (American Express)"
     },
+    "IHG One Rewards Traveler": {
+      "color": "#009BAA",
+      "abbr": "IHG",
+      "group": "IHG One Rewards — Personal (Chase)"
+    },
+    "IHG One Rewards Premier Business": {
+      "color": "#009BAA",
+      "abbr": "IHG",
+      "group": "IHG One Rewards — Business (Chase)"
+    },
+    "JetBlue Premier": {
+      "color": "#00A1DE",
+      "abbr": "JetBlue",
+      "group": "JetBlue — Personal (Barclays)"
+    },
+    "JetBlue Business": {
+      "color": "#00A1DE",
+      "abbr": "JetBlue",
+      "group": "JetBlue — Business (Barclays)"
+    },
     "IHG One Rewards Premier": {
       "color": "#009BAA",
       "abbr": "IHG",
@@ -4206,6 +4425,36 @@
       "color": "#00A1DE",
       "abbr": "JetBlue",
       "group": "JetBlue — Personal (Barclays)"
+    },
+    "Marriott Bonvoy Bold": {
+      "color": "#CC2027",
+      "abbr": "Marriott",
+      "group": "Marriott Bonvoy — Personal (Chase)"
+    },
+    "Marriott Bonvoy Bountiful": {
+      "color": "#CC2027",
+      "abbr": "Marriott",
+      "group": "Marriott Bonvoy — Personal (Chase)"
+    },
+    "Marriott Bonvoy Bevy": {
+      "color": "#CC2027",
+      "abbr": "Marriott",
+      "group": "Marriott Bonvoy — Personal (American Express)"
+    },
+    "Marriott Bonvoy Business": {
+      "color": "#CC2027",
+      "abbr": "Marriott",
+      "group": "Marriott Bonvoy — Business (American Express)"
+    },
+    "Southwest Rapid Rewards Premier Business": {
+      "color": "#304CB2",
+      "abbr": "SW",
+      "group": "Southwest Rapid Rewards — Business (Chase)"
+    },
+    "Southwest Rapid Rewards Performance Business": {
+      "color": "#E31837",
+      "abbr": "SW",
+      "group": "Southwest Rapid Rewards — Business (Chase)"
     },
     "Marriott Bonvoy Boundless": {
       "color": "#CC2027",
@@ -4273,6 +4522,21 @@
       "abbr": "USBank",
       "group": "U.S. Bank — Business"
     },
+    "United Gateway": {
+      "color": "#1259C3",
+      "abbr": "United",
+      "group": "United — Personal (Chase)"
+    },
+    "United Business": {
+      "color": "#1259C3",
+      "abbr": "United",
+      "group": "United — Business (Chase)"
+    },
+    "United Club Business": {
+      "color": "#1259C3",
+      "abbr": "United",
+      "group": "United — Business (Chase)"
+    },
     "United Explorer": {
       "color": "#1259C3",
       "abbr": "United",
@@ -4283,12 +4547,7 @@
       "abbr": "United",
       "group": "United — Personal (Chase)"
     },
-    "United Club Infinite": {
-      "color": "#1259C3",
-      "abbr": "United",
-      "group": "United — Personal (Chase)"
-    },
-    "United Explorer Card": {
+    "United Club": {
       "color": "#1259C3",
       "abbr": "United",
       "group": "United — Personal (Chase)"
@@ -4451,6 +4710,7 @@
     "resnexus.com",
     "thinkreservations.com",
     "checkfront.com",
+    "rguest.com",
     "lodgify.com",
     "ownerrez.com",
     "guesty.com",
