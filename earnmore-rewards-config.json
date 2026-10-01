@@ -285,6 +285,10 @@
       "subcategory": "Charitable Giving",
       "bucket": "Nonprofit"
     },
+    "American Red Cross": {
+      "subcategory": "Charitable Giving",
+      "bucket": "Nonprofit"
+    },
     "Groceries": {
       "subcategory": "Groceries",
       "bucket": "Groceries"
@@ -1597,19 +1601,19 @@
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Groceries",
           "rate": 5
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
-          "rate": 5
+          "category": "Dining",
+          "rate": 7
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "American Red Cross",
           "rate": 5
         },
         {
@@ -2114,19 +2118,19 @@
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Dining",
           "rate": 5
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Entertainment",
           "rate": 5
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Utilities",
           "rate": 5
         },
         {
@@ -2309,19 +2313,19 @@
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Dining",
           "rate": 5
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Entertainment",
           "rate": 5
         },
         {
           "start": "2026-10-01",
           "end": "2026-12-31",
-          "category": "",
+          "category": "Utilities",
           "rate": 5
         },
         {
@@ -3152,6 +3156,7 @@
     "zipcar.com": "Car Rentals",
     "feedingamerica.org": "Feeding America",
     "unitedway.org": "United Way",
+    "redcross.org": "American Red Cross",
     "adidas.com": "Clothing",
     "ae.com": "Clothing",
     "aloyoga.com": "Clothing",
