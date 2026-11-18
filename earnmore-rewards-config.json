@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_verified": "2026-09",
+    "last_verified": "2026-11",
     "notes": "Rewards rates subject to change. Always confirm on issuer website before applying. Portal rates (e.g. Chase Travel, Amex Travel, Capital One Travel) only apply when booking through that issuer's portal. Categories earning at the same rate as Other are omitted."
   },
   "ONLINE_RETAIL_CATEGORIES": {
@@ -1304,23 +1304,34 @@
               },
               {
                 "label": "Online Shopping",
+                "onlineOnly": true,
                 "categories": [
-                  "Other",
                   "Amazon",
+                  "Auto Parts",
+                  "Beauty",
+                  "Books",
                   "Clothing",
                   "Department Stores",
+                  "Discount Stores",
                   "Electronics",
-                  "Beauty",
+                  "Eyewear",
+                  "Flowers & Gifts",
                   "Furniture",
-                  "Pet Supplies",
-                  "Sporting Goods",
-                  "Office Supplies",
-                  "Streaming",
+                  "Home Improvement",
                   "Internet",
+                  "Jewelry",
+                  "Luggage",
+                  "Musical Instruments",
+                  "Office Supplies",
+                  "Online Marketplaces",
+                  "Pet Supplies",
                   "Phone",
-                  "Dining",
-                  "Fast Food",
-                  "Online Retail"
+                  "Sporting Goods",
+                  "Streaming",
+                  "Superstores",
+                  "Toys & Games",
+                  "Wholesale Clubs",
+                  "Costco"
                 ]
               },
               {
